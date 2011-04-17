@@ -1,0 +1,14 @@
+#content{ 
+    position:absolute; 
+    top:30px; 
+    left:90px; 
+    background:transparent; 
+    width:230px; 
+    text-align:left; 
+    /*AARRGGBB, 99=HEX(.6*255) */
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
+    zoom: 1;
+}
+
+
