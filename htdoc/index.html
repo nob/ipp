@@ -47,26 +47,22 @@
 					slide_counter           :   0,		//Display slide numbers
 					slide_captions          :   0,		//Slide caption (Pull from "title" in slides array)
 					slides 					:  	[		//Slideshow Images
-/*
-														{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.1/slides/quietchaos-kitty.jpg', title : 'Quiet Chaos by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.1/slides/wanderers-kitty.jpg', title : 'Wanderers by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.1/slides/apple-kitty.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'}  
-*/
-														{image : 'img/slide/img_0422.jpg', title : 'Quiet Chaos by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0440.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0433.jpg', title : 'Wanderers by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0436.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0428.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0426.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0435.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0423.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0438.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0424.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0420.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0419.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0431.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0417.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
-														{image : 'img/slide/img_0418.jpg', title : 'Applewood by Kitty Gallannaugh', url : 'http://ve.th7vs8bf.vesrv.com/new/'},  
+														{image : 'img/slide/img_0436.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0422.jpg', title : 'Quiet Chaos by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0440.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0424.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0426.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0433.jpg', title : 'Wanderers by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0435.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0423.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0445.jpg', title : 'Quiet Chaos by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0438.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0428.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0420.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0419.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0431.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0417.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''},  
+														{image : 'img/slide/img_0418.jpg', title : 'Applewood by Kitty Gallannaugh', url : ''}  
 												]
 												
 				}); 
@@ -82,11 +78,14 @@
 					p a:hover{ background-color:#94989C; border-color:#B3B4B5; color:#fff; }
                     
 			h3{ padding:10px 20px 10px 20px; margin: 0px 0px 30px 0px;}
-			
+
 			#content{ position:absolute; top:30px; left:90px; background:#111; background:rgba(0,0,0,0.70); width:230px; text-align:left; }
 			.stamp{ float: right; margin: 15px 30px 0 0;}
 			
 		</style>
+        <!--[if IE]>
+        <link rel="stylesheet" href="css/ippuku-ie.css" type="text/css" media="screen, projection">  
+        <![endif]-->
 		
 	</head>
 
@@ -96,15 +95,15 @@
 	<div id="content">
 		<h3><img src="img/ipk-logo.png"/></h3>
 		<p>
-            <a href="http://ve.th7vs8bf.vesrv.com/new/" alt="About">About</a>
-			<a href="http://ve.th7vs8bf.vesrv.com/new/" alt="Directions">Directions</a>
+            <a href="" alt="About">About</a>
+			<a href="" alt="Directions">Directions</a>
 		</p>
 		<p>
-			<a href="http://ve.th7vs8bf.vesrv.com/new/" alt="Hours">Hours</a>
-			<a href="http://ve.th7vs8bf.vesrv.com/new/" alt="Menus">Menus</a>
+			<a href="" alt="Hours">Hours</a>
+			<a href="" alt="Menus">Menus</a>
 		</p>
 		<p>
-			<a href="http://ve.th7vs8bf.vesrv.com/new/" alt="Reservations">Reservations</a>
+			<a href="" alt="Reservations">Reservations</a>
 		</p>
 	</div>
 
