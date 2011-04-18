@@ -1,23 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<title>Ippuku</title>
-
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-
 		<meta http-equiv="X-UA-Compatible" content="IE=8" />
-
 		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
-		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/supersized.3.1.3.min.js"></script>
-		
+        <script src="http://cdn.jquerytools.org/1.2.5/tiny/jquery.tools.min.js"></script>
 		<script type="text/javascript">  
-			
+
 			jQuery(function($){
 				$.supersized({
-				
 					//Functionality
 					slideshow               :   1,		//Slideshow on/off
 					autoplay				:	1,		//Slideshow starts playing automatically
@@ -30,7 +24,7 @@
 					pause_hover             :   0,		//Pause slideshow on hover
 					keyboard_nav            :   1,		//Keyboard navigation on/off
 					performance				:	1,		//0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
-					image_protect			:	0,		//Disables image dragging and right click with Javascript
+					image_protect			:	1,		//Disables image dragging and right click with Javascript
 					image_path				:	'img/', //Default image path
 
 					//Size & Position
@@ -66,46 +60,76 @@
 												]
 												
 				}); 
+
+                //Initial translation.
+                translate();                
+
+                //Initialize overlay.
+                $('a[rel]').overlay({speed:'slow', left:370, top: 100});
+
+                //Initialize langage button.
+                $('#lang a').click(function(){
+                    $(this).toggleClass('active');
+                    $(this).siblings().toggleClass('active', false);
+                    translate();
+                });
 		    });
+            
+            function translate() {
+                if ($('a[alt="Japanese"]').hasClass('active')) {
+
+                    $('a[rel="#about"]').text('一服について');
+                    $('a[rel="#dirc"]').text('地図');
+                    $('a[rel="#hour"]').text('営業時間');
+                    $('a[rel="#menu"]').text('品書き');
+                    $('a[rel="#rsvn"]').text('ご予約');
+                    $('#about > p').text('一服について...とかなんとか');
+                    $('#dirc > p').text('地図...とかなんとか');
+                    $('#hour > p').text('営業時間...とかなんとか');
+                    $('#menu > p').text('品書き...とかなんとか');
+                    $('#rsvn > p').text('ご予約...とかなんとか');
+
+                } else {
+
+                    $('a[rel="#about"]').text('About');
+                    $('a[rel="#dirc"]').text('Directions');
+                    $('a[rel="#hour"]').text('Hours');
+                    $('a[rel="#menu"]').text('Menus');
+                    $('a[rel="#rsvn"]').text('Reservations');
+                    $('#about > p').text('About Ippuku...blah blah blah...');
+                    $('#dirc > p').text('Direction to Ippuku and Map...blah blah blah...');
+                    $('#hour > p').text('Open hours...blah blah blah...');
+                    $('#menu > p').text('Menus...blah blah blah...');
+                    $('#rsvn > p').text('How to make reservations...blah blah blah...');
+
+                }
+            } 
 		    
 		</script>
-		
-		<style type="text/css">
-		
-			/*Demo Styles*/
-			p{ padding:0 30px 10px 30px; color:#fff; font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; text-shadow: #000 0px 1px 0px; line-height:200%; }
-				p a{ padding: 5px 10px; margin: 0px 5px; text-align:center; width: 100px; font-size:11pt; text-decoration:none; outline: none; color:#ddd; background:#222; border-top:1px solid #333; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; -moz-box-shadow: 0px 1px 1px #000; -webkit-box-shadow: 0px 1px 1px #000; box-shadow: 0px 1px 1px #000; }
-					p a:hover{ background-color:#94989C; border-color:#B3B4B5; color:#fff; }
-                    
-			h3{ padding:10px 20px 10px 20px; margin: 0px 0px 30px 0px;}
-
-			#content{ position:absolute; top:30px; left:90px; background:#111; background:rgba(0,0,0,0.70); width:230px; text-align:left; }
-			.stamp{ float: right; margin: 15px 30px 0 0;}
-			
-		</style>
+        <link rel="stylesheet" href="css/ippuku.css" type="text/css" media="screen, projection">  
         <!--[if IE]>
         <link rel="stylesheet" href="css/ippuku-ie.css" type="text/css" media="screen, projection">  
         <![endif]-->
-		
 	</head>
-
 <body>		
-
-
-	<div id="content">
+	<div id="logo-navi" class="content">
 		<h3><img src="img/ipk-logo.png"/></h3>
-		<p>
-            <a href="" alt="About">About</a>
-			<a href="" alt="Directions">Directions</a>
+		<p id="navi">
+			<a href="" alt="Hours" rel="#hour"></a>
+			<a href="" alt="Directions" rel="#dirc"></a>
 		</p>
-		<p>
-			<a href="" alt="Hours">Hours</a>
-			<a href="" alt="Menus">Menus</a>
+		<p id="navi">
+			<a href="" alt="Menus" rel="#menu"></a>
+			<a href="" alt="Reservations" rel="#rsvn"></a>
 		</p>
-		<p>
-			<a href="" alt="Reservations">Reservations</a>
+		<p id="navi">
+            <a href="" alt="About" rel="#about"></a>
 		</p>
 	</div>
+    <div id="lang" class="content">
+        <a alt="Japanese">日本語</a>
+        <a alt="English" class="active">English</a>
+    </div>
 
 	<!--Thumbnail Navigation-->
 	<!--
@@ -142,5 +166,21 @@
 		</div>
 	</div>
 -->
+    <!-- overlayed element -->
+    <div class="overlay content" id="about">
+        <p></p>
+    </div>
+    <div class="overlay content" id="dirc">
+        <p></p>
+    </div>
+    <div class="overlay content" id="hour">
+        <p></p>
+    </div>
+    <div class="overlay content" id="menu">
+        <p></p>
+    </div>
+    <div class="overlay content" id="rsvn">
+        <p></p>
+    </div>
 </body>
 </html>

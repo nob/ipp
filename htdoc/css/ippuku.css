@@ -1,0 +1,112 @@
+body {
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    line-height:200%; 
+}
+.content{
+    background-color:#111; 
+    background:rgba(0,0,0,0.70); 
+    color:#fff;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
+-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
+zoom: 1;
+
+} 
+#logo-navi{ 
+    position:absolute; 
+    top:30px; 
+    left:90px; 
+    width:240px; 
+    text-align:left; 
+}
+.stamp{ 
+    float: right; 
+    margin: 15px 30px 0 0;
+}
+p#navi { 
+    padding:0 15px 10px; 
+    color:#fff; 
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    text-shadow: #000 0px 1px 0px; 
+    line-height:200%; 
+}
+p#navi a{ 
+    padding: 5px 10px; 
+    margin: 0px 5px; 
+    text-align:center; 
+    font-size:12pt; 
+    text-decoration:none; 
+    outline: none; 
+    color:#ddd; 
+    background:#222; 
+    border-top:1px solid #333; 
+    -moz-border-radius:3px; 
+    -webkit-border-radius:3px; 
+    border-radius:3px; 
+    -moz-box-shadow: 0px 1px 1px #000; 
+    -webkit-box-shadow: 0px 1px 1px #000; 
+    box-shadow: 0px 1px 1px #000; 
+}
+        
+p#navi a:hover { 
+    background-color:#94989C; 
+    border-color:#B3B4B5; 
+    color:#fff; 
+}
+
+div#lang { 
+    position:absolute; 
+    top:0px; 
+    right:100px; 
+    width:170px; 
+    padding:10px 10px 5px; 
+    text-align: center;
+}
+div#lang a { 
+    margin: 0px 15px;
+    text-align:center; 
+    font:10pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    text-decoration:none; 
+    outline: none; 
+    color:#ADACAC;
+    cursor: pointer;
+}
+div#lang a:hover {
+    color: #FFF; 
+}
+div#lang a.active{
+    color: #FA9420; 
+}
+h3{ 
+    padding:10px 20px 10px 20px; 
+    margin: 0px 0px 20px 0px;
+}
+
+/* the overlayed element */
+.overlay {
+    /* must be initially hidden */
+    display:none;
+    width: 550px;
+    min-height:300px;
+    padding: 10px 20px;
+    /* place overlay on top of other elements */
+/*
+    z-index:10000;
+*/
+    /* CSS3 styling for latest browsers */
+/*
+    -moz-box-shadow:0 0 90px 5px #000;
+    -webkit-box-shadow: 0 0 90px #000;  
+*/
+    font:13pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+}
+
+/* close button positioned on upper right corner */
+.overlay .close {
+    background-image:url(../img/close.png);
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    cursor:pointer;
+    height:35px;
+    width:35px;
+}
