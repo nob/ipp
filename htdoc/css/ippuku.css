@@ -1,6 +1,10 @@
 body {
     font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    background-color:#000000;
     line-height:200%; 
+}
+h4 {
+    margin: 0 0 10px;
 }
 .content{
     background-color:#111; 
@@ -22,14 +26,14 @@ zoom: 1;
     float: right; 
     margin: 15px 30px 0 0;
 }
-p#navi { 
+p.navi { 
     padding:0 15px 10px; 
+}
+p.navi a{ 
     color:#fff; 
     font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
     text-shadow: #000 0px 1px 0px; 
     line-height:200%; 
-}
-p#navi a{ 
     padding: 5px 10px; 
     margin: 0px 5px; 
     text-align:center; 
@@ -47,7 +51,7 @@ p#navi a{
     box-shadow: 0px 1px 1px #000; 
 }
         
-p#navi a:hover { 
+p.navi a:hover { 
     background-color:#94989C; 
     border-color:#B3B4B5; 
     color:#fff; 
@@ -82,31 +86,53 @@ h3{
 }
 
 /* the overlayed element */
-.overlay {
+div#overlay {
     /* must be initially hidden */
     display:none;
-    width: 550px;
-    min-height:300px;
-    padding: 10px 20px;
-    /* place overlay on top of other elements */
 /*
-    z-index:10000;
+    background-image:url(../img/transparent.png);
 */
-    /* CSS3 styling for latest browsers */
-/*
+    width: 550px;
+    padding: 35px 0px 15px;
+    /* place overlay on top of other elements 
+    z-index:10000;
+    */
+    /* CSS3 styling for latest browsers
     -moz-box-shadow:0 0 90px 5px #000;
     -webkit-box-shadow: 0 0 90px #000;  
-*/
-    font:13pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    */
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
 }
-
+div#overlay div#wrap {
+    width: 515px;
+    padding: 0px 15px;
+    max-height:527px;
+    overflow-y:auto;
+}
+div#overlay p{
+    margin: 0 0 15px;
+}
+div#overlay p#map-link{
+    margin: 0 0 5px ! important;
+    text-align: right;
+}
+p#map-link a{
+    color: #FFFFFF; 
+}
 /* close button positioned on upper right corner */
-.overlay .close {
-    background-image:url(../img/close.png);
+div#overlay .close {
+    background-image:url(../img/close11.png);
     position:absolute;
+/*
     right:-15px;
     top:-15px;
+*/
+    right:4px;
+    top:4px;
     cursor:pointer;
-    height:35px;
-    width:35px;
+    height:25px;
+    width:25px;
+}
+div#dev-info {
+    color: #FFFFFF;
 }
