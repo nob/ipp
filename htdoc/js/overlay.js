@@ -149,7 +149,8 @@
 
 				
 		 		// load effect  		 		
-				eff[0].call(self, {top: top, left: left}, function() {					
+				//eff[0].call(self, {top: top, left: left}, function() {					
+				eff[0].call(self, {top: top, right: left}, function() { //enable to specify postion from right insted of left.		
 					if (opened) {
 						e.type = "onLoad";
 						fire.trigger(e);
