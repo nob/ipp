@@ -6,4 +6,5 @@
 |
 */
 
+$lang['title']	=  "Menus";
 $lang['desc']	=  "";

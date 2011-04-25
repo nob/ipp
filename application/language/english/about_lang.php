@@ -6,5 +6,6 @@
 |
 */
 
+$lang['title']  =  'About Ippuku';
 $lang['desc']  =  '';
 

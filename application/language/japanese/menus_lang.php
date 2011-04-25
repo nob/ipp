@@ -6,4 +6,5 @@
 |
 */
 
+$lang['title']	=  "品書き";
 $lang['desc']	=  "";

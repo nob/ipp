@@ -6,5 +6,6 @@
 |
 */
 
-$lang['desc']  =  'about';
+$lang['title']  =  '一服について';
+$lang['desc']  =  '';
 

@@ -6,6 +6,7 @@
 |
 */
 
+$lang['title']	= "Open Hours"; 
 $lang['desc']	=  
 "Sun-Thurs: 5:00pm - 10:00pm
 Fri-Sat: 5:00pm - 11:00pm";

@@ -53,7 +53,7 @@ jQuery(function($){
     //Initialize overlay.
     var overlays = $('a[rel]').overlay({
         speed: 'slow', 
-        left: 370, 
+        left: 90, 
         top: 100,
         onBeforeLoad: function() { 
             // grab wrapper element inside content 
