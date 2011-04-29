@@ -9,13 +9,18 @@
 |	http://codeigniter.com/user_guide/general/hooks.html
 |
 */
+$hook['post_controller_constructor'][] = array(
+    'class'     => '',
+    'function'  => 'set_language',
+    'filename'  => 'set_language.php',
+    'filepath'  => 'hooks'
+);
 $hook['display_override'][] = array(
     'class'     => '',
     'function'  => 'translate_view',
     'filename'  => 'translate_view.php',
     'filepath'  => 'hooks'
 );
-
 
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */

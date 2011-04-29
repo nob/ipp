@@ -26,25 +26,25 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
         <span>SERVER IP: <?php echo $_SERVER['SERVER_ADDR']; ?></span>
     </div>
 <?php
-}
+/}
 ?>
 	<div id="logo-navi" class="content">
 		<h3><img src="<?php echo site_url('img/ipk-logo.png');?>"/></h3>
 		<p class="navi">
-			<a href="<?php echo site_url('hours/index/en/');?>" alt="Hours" rel="#overlay" id="hour">%%hour%%</a>
-			<a href="<?php echo site_url('directions/index/en/');?>" alt="Directions" rel="#overlay" id="dirc">%%dirc%%</a>
+            <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour">%%hour%%</a>
+			<a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc">%%dirc%%</a>
         <p>
         <p class="navi">
-			<a href="<?php echo site_url('menus/index/en/');?>" alt="Menus" rel="#overlay" id="menu">%%menu%%</a>
-			<a href="<?php echo site_url('reservations/index/en/');?>" alt="Reservations" rel="#overlay" id="rsvn">%%rsvn%%</a>
+			<a href="<?php echo site_url("menus/index/$lang/");?>" alt="Menus" rel="#overlay" id="menu">%%menu%%</a>
+			<a href="<?php echo site_url("reservations/index/$lang/");?>" alt="Reservations" rel="#overlay" id="rsvn">%%rsvn%%</a>
         <p>
         <p class="navi">
-            <a href="<?php echo site_url('about/index/en/');?>" alt="About" rel="#overlay" id="about">%%about%%</a>
+            <a href="<?php echo site_url("about/index/$lang/");?>" alt="About" rel="#overlay" id="about">%%about%%</a>
 		</p>
 	</div>
     <div id="lang" class="content">
-        <a href="<?php echo site_url('home/index/ja/');?>" alt="Japanese">日本語</a>
-        <a href="<?php echo site_url('home/index/en/');?>"alt="English" class="active">English</a>
+    <a href="<?php echo site_url('home/index/ja/');?>" alt="Japanese" class="<?php if ($lang == 'ja') echo 'active'; ?>">日本語</a>
+        <a href="<?php echo site_url('home/index/en/');?>"alt="English" class="<?php if ($lang == 'en') echo 'active'; ?>">English</a>
     </div>
 
 	<!--Thumbnail Navigation-->
