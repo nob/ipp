@@ -4,7 +4,8 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('home');
+        $vars['with_intro'] = ($this->uri->segment(1) === 'home') ? false : true;
+		$this->load->view('home', $vars);
 	}
 
     public function json()

@@ -1,8 +1,10 @@
 jQuery(function($){
+        
+    //call Supersized screen slideshow. 
     $.supersized({
         //Functionality
         slideshow               :   1,		//Slideshow on/off
-        autoplay				:	1,		//Slideshow starts playing automatically
+        autoplay				:	0,		//Slideshow starts playing automatically
         start_slide             :   1,		//Start slide (0 is random)
         random					: 	0,		//Randomize slide order (Ignores start slide)
         slide_interval          :   3000,	//Length between transitions
@@ -67,25 +69,36 @@ jQuery(function($){
     $('#lang a').click(function(){
         event.preventDefault();
         $.each(overlays, function (key, val) {
-                var ol = overlays.eq(key).overlay();
-                if (ol.isOpened()) ol.close(); 
+            var ol = overlays.eq(key).overlay();
+            if (ol.isOpened()) ol.close(); 
         });
         $(this).toggleClass('active', true);
         $(this).siblings().toggleClass('active', false);
-        translate_navi();
+        translateNavi();
     });
 });
 
-function translate_navi() {
-    var url = $(".active").attr("href");
+function closeFlash() {
+    $('#flash').hide();
+    $('#flash-wrap > p').hide();
+    //$('#logo-navi').css('z-index', '100');
+    $('#logo-navi').fadeIn(600);
+    $('#flash-wrap').delay(800).fadeOut(1500);
+    
+    //start playing slide show.
+    $('#pauseplay').trigger('click');
+}
+
+function translateNavi() {
+    var url = $('.active').attr('href');
     var lang = jQuery.url.setUrl(url).segment(3);
-    var current_lang = (lang === "en") ? "ja" : "en";
-    var url = url.replace("\/index\/", "\/json\/");
+    var current_lang = (lang === 'en') ? 'ja' : 'en';
+    var url = url.replace('\/index\/', '\/json\/');
     $.getJSON(url, function(data) {
         $.each(data, function (key, val) {
-            $("#" + key).text(val);
-            var new_url = $("#" + key).attr("href").replace("\/" + current_lang, "\/" + lang);
-            $("#" + key).attr("href", new_url);
+            $('#' + key).text(val);
+            var new_url = $('#' + key).attr('href').replace('\/' + current_lang, '\/' + lang);
+            $('#' + key).attr('href', new_url);
         });
     });
 } 

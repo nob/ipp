@@ -17,6 +17,7 @@ zoom: 1;
 } 
 #logo-navi{ 
     position:absolute; 
+    z-index:100;
     top:30px; 
     left:90px; 
     width:240px; 
@@ -95,7 +96,7 @@ div#overlay {
     width: 550px;
     padding: 35px 0px 15px;
     /* place overlay on top of other elements 
-    z-index:10000;
+    z-index:10;
     */
     /* CSS3 styling for latest browsers
     -moz-box-shadow:0 0 90px 5px #000;
@@ -132,6 +133,47 @@ div#overlay .close {
     cursor:pointer;
     height:25px;
     width:25px;
+}
+
+div#flash-wrap {
+    width: 100%;
+    height: 100%;
+    background:#000000;
+    z-index:99;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+}
+div#flash-wrap p {
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    text-align:right;
+}
+div#flash-wrap a {
+    color:#FFFFFF;
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    font-weight: bold;
+    text-decoration: none;
+}
+div#flash {
+    width: 1000px;
+    height: 563px;
+    margin: 37px auto 0;
+}
+div#nojs-msg {
+    width: 100%;
+    position: absolute;
+    z-index:101;
+    top:317px;
+    padding:4px 0; 
+    text-align: center;
+    background-color: orange;
+    color: #FFFFFF;
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    font-weight: bold;
 }
 div#dev-info {
     color: #FFFFFF;

@@ -5,12 +5,13 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=8" />
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/jquery.url.js');?>"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/supersized.3.1.3.min.js');?>"></script>
         <!--<script src="http://cdn.jquerytools.org/1.2.5/tiny/jquery.tools.min.js"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
         <script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>
+        <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/ippuku.js');?>"></script>
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku.css');?>" type="text/css" media="screen, projection">  
         <!--[if IE]>
@@ -18,6 +19,31 @@
         <![endif]-->
 	</head>
 <body>		
+    <noscript>    
+        <div id="nojs-msg">Please turn on Javascript on your web browser to see this site correctly.</div>
+    </noscript>    
+<?php
+if ($with_intro === true) 
+{
+?>
+    <!-- flash movie layer-->
+    <div id="flash-wrap">
+        <div id="flash"></div>
+        <p><a href="<?php echo site_url('home');?>" alt="Enter Ippuku">Enter Ippuku</a></p>
+    </div>
+    <script>
+    //load intro flash movie.
+    flashembed("flash", "intro.swf");
+
+    //Initialize "Enter" anchor.
+    $('#flash-wrap a').click(function() {
+        event.preventDefault();
+        closeFlash();
+    });
+    </script>
+<?php
+}
+?>
 <?php
 if ((isset($this->config) AND $this->config->item("dev_mode")))
 {
@@ -26,10 +52,10 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
         <span>SERVER IP: <?php echo $_SERVER['SERVER_ADDR']; ?></span>
     </div>
 <?php
-/}
+}
 ?>
-	<div id="logo-navi" class="content">
-		<h3><img src="<?php echo site_url('img/ipk-logo.png');?>"/></h3>
+    <div id="logo-navi" class="content">
+		<h3><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo.png');?>"/><a></h3>
 		<p class="navi">
             <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour">%%hour%%</a>
 			<a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc">%%dirc%%</a>
@@ -42,8 +68,18 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
             <a href="<?php echo site_url("about/index/$lang/");?>" alt="About" rel="#overlay" id="about">%%about%%</a>
 		</p>
 	</div>
+<?php
+if ($with_intro === true) 
+{
+?>
+    <script>
+    $('#logo-navi').hide();
+    </script>
+<?php
+}
+?>
     <div id="lang" class="content">
-    <a href="<?php echo site_url('home/index/ja/');?>" alt="Japanese" class="<?php if ($lang == 'ja') echo 'active'; ?>">日本語</a>
+        <a href="<?php echo site_url('home/index/ja/');?>" alt="Japanese" class="<?php if ($lang == 'ja') echo 'active'; ?>">日本語</a>
         <a href="<?php echo site_url('home/index/en/');?>"alt="English" class="<?php if ($lang == 'en') echo 'active'; ?>">English</a>
     </div>
 
