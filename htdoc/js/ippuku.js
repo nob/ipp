@@ -22,8 +22,8 @@ jQuery(function($){
         min_height		        :   0,		//Min height allowed (in pixels)
         vertical_center         :   1,		//Vertically center background
         horizontal_center       :   1,		//Horizontally center background
-        fit_portrait         	:   0,		//Portrait images will not exceed browser height
-        fit_landscape			:   0,		//Landscape images will not exceed browser width
+        fit_portrait         	:   1,		//Portrait images will not exceed browser height
+        fit_landscape			:   1,		//Landscape images will not exceed browser width
         
         //Components
         navigation              :   1,		//Slideshow controls on/off
