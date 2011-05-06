@@ -55,7 +55,7 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
 }
 ?>
     <div id="logo-navi" class="content">
-		<h3><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo.png');?>"/><a></h3>
+		<h3><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>"/><a></h3>
 		<p class="navi">
             <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour">%%hour%%</a>
 			<a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc">%%dirc%%</a>
