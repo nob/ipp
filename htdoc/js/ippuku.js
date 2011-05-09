@@ -1,10 +1,29 @@
 jQuery(function($){
+
+    var autoplay = 0;
+
+    //if flash intro is requested,
+    if ($('#flash-wrap').length > 0) {
+        //hide logo & navi
+        $('#logo-navi').hide();
+        //load intro flash movie.
+        flashembed("flash", "intro.swf");
+        //Initialize "Enter" anchor.
+        $('#flash-wrap a').click(function() {
+            event.preventDefault();
+            closeFlash();
+        });
+    //or if flash intro is not requested,
+    } else {
+        //start playing slide show.
+        autoplay = 1;
+    }
         
     //call Supersized screen slideshow. 
     $.supersized({
         //Functionality
         slideshow               :   1,		//Slideshow on/off
-        autoplay				:	0,		//Slideshow starts playing automatically
+        autoplay				:	autoplay,//Slideshow starts playing automatically
         start_slide             :   1,		//Start slide (0 is random)
         random					: 	0,		//Randomize slide order (Ignores start slide)
         slide_interval          :   3000,	//Length between transitions
@@ -15,7 +34,7 @@ jQuery(function($){
         keyboard_nav            :   1,		//Keyboard navigation on/off
         performance				:	1,		//0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
         image_protect			:	0,		//Disables image dragging and right click with Javascript
-        image_path				:	'img/', //Default image path
+        image_path				:	'/new/img/', //Default image path
 
         //Size & Position
         min_width		        :   0,		//Min width allowed (in pixels)
@@ -32,22 +51,22 @@ jQuery(function($){
         slide_captions          :   0,		//Slide caption (Pull from "title" in slides array)
         slides 					:  	[		//Slideshow Images
                                             //{image : '<?php echo site_url("img/slide/img_0436.jpg");?>', title : 'AAA by BBB', url : ''},  
-                                            {image : 'img/slide/img_0436.jpg'},  
-                                            {image : 'img/slide/img_0422.jpg'},  
-                                            {image : 'img/slide/img_0440.jpg'},  
-                                            {image : 'img/slide/img_0424.jpg'},  
-                                            {image : 'img/slide/img_0426.jpg'},  
-                                            {image : 'img/slide/img_0433.jpg'},  
-                                            {image : 'img/slide/img_0435.jpg'},  
-                                            {image : 'img/slide/img_0423.jpg'},  
-                                            {image : 'img/slide/img_0445.jpg'},  
-                                            {image : 'img/slide/img_0438.jpg'},  
-                                            {image : 'img/slide/img_0428.jpg'},  
-                                            {image : 'img/slide/img_0420.jpg'},  
-                                            {image : 'img/slide/img_0419.jpg'},  
-                                            {image : 'img/slide/img_0431.jpg'},  
-                                            {image : 'img/slide/img_0417.jpg'},  
-                                            {image : 'img/slide/img_0418.jpg'}  
+                                            {image : '/new/img/slide/img_0436.jpg'},  
+                                            {image : '/new/img/slide/img_0422.jpg'},  
+                                            {image : '/new/img/slide/img_0440.jpg'},  
+                                            {image : '/new/img/slide/img_0424.jpg'},  
+                                            {image : '/new/img/slide/img_0426.jpg'},  
+                                            {image : '/new/img/slide/img_0433.jpg'},  
+                                            {image : '/new/img/slide/img_0435.jpg'},  
+                                            {image : '/new/img/slide/img_0423.jpg'},  
+                                            {image : '/new/img/slide/img_0445.jpg'},  
+                                            {image : '/new/img/slide/img_0438.jpg'},  
+                                            {image : '/new/img/slide/img_0428.jpg'},  
+                                            {image : '/new/img/slide/img_0420.jpg'},  
+                                            {image : '/new/img/slide/img_0419.jpg'},  
+                                            {image : '/new/img/slide/img_0431.jpg'},  
+                                            {image : '/new/img/slide/img_0417.jpg'},  
+                                            {image : '/new/img/slide/img_0418.jpg'}  
                                     ]
                                     
     }); 
@@ -58,10 +77,16 @@ jQuery(function($){
         left: 90, 
         top: 100,
         onBeforeLoad: function() { 
+            //activate the trigger to change it's color.
+            this.getTrigger().toggleClass('active', true);
             // grab wrapper element inside content 
             var wrap = this.getOverlay().find("#wrap"); 
             // load the page specified in the trigger 
             wrap.load(this.getTrigger().attr("href")); 
+        },
+        onClose: function() { 
+            //deactivate the trigger to change it's color.
+            this.getTrigger().toggleClass('active', false);
         }
     });
 
@@ -72,10 +97,11 @@ jQuery(function($){
             var ol = overlays.eq(key).overlay();
             if (ol.isOpened()) ol.close(); 
         });
+        $('#lang a').toggleClass('active', false);
         $(this).toggleClass('active', true);
-        $(this).siblings().toggleClass('active', false);
         translateNavi();
     });
+
 });
 
 function closeFlash() {
@@ -90,15 +116,16 @@ function closeFlash() {
 }
 
 function translateNavi() {
-    var url = $('.active').attr('href');
+    var url = $('#lang a.active').attr('href');
     var lang = jQuery.url.setUrl(url).segment(3);
     var current_lang = (lang === 'en') ? 'ja' : 'en';
     var url = url.replace('\/index\/', '\/json\/');
     $.getJSON(url, function(data) {
         $.each(data, function (key, val) {
-            $('#' + key).text(val);
-            var new_url = $('#' + key).attr('href').replace('\/' + current_lang, '\/' + lang);
-            $('#' + key).attr('href', new_url);
+            $('#' + key + '-' + current_lang).text(val);
+            var new_url = $('#' + key + '-' + current_lang).attr('href').replace('\/' + current_lang, '\/' + lang);
+            $('#' + key + '-' + current_lang).attr('href', new_url);
+            $('#' + key + '-' + current_lang).attr('id', key + '-' + lang);
         });
     });
 } 

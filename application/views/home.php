@@ -5,6 +5,10 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=8" />
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
+        <link rel="stylesheet" href="<?php echo site_url('css/ippuku.css');?>" type="text/css" media="screen, projection">  
+        <!--[if IE]>
+        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-ie.css');?>" type="text/css" media="screen, projection">  
+        <![endif]-->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/jquery.url.js');?>"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/supersized.3.1.3.min.js');?>"></script>
@@ -13,10 +17,6 @@
         <script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>
         <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/ippuku.js');?>"></script>
-        <link rel="stylesheet" href="<?php echo site_url('css/ippuku.css');?>" type="text/css" media="screen, projection">  
-        <!--[if IE]>
-        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-ie.css');?>" type="text/css" media="screen, projection">  
-        <![endif]-->
 	</head>
 <body>		
     <noscript>    
@@ -29,18 +29,8 @@ if ($with_intro === true)
     <!-- flash movie layer-->
     <div id="flash-wrap">
         <div id="flash"></div>
-        <p><a href="<?php echo site_url('home');?>" alt="Enter Ippuku">Enter Ippuku</a></p>
+        <p><a href="<?php echo site_url('home');?>" id="enter" alt="Enter Ippuku">Enter Ippuku</a></p>
     </div>
-    <script>
-    //load intro flash movie.
-    flashembed("flash", "intro.swf");
-
-    //Initialize "Enter" anchor.
-    $('#flash-wrap a').click(function() {
-        event.preventDefault();
-        closeFlash();
-    });
-    </script>
 <?php
 }
 ?>
@@ -55,32 +45,22 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
 }
 ?>
     <div id="logo-navi" class="content">
-		<h3><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>"/><a></h3>
+		<h3><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>"/></a></h3>
 		<p class="navi">
-            <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour">%%hour%%</a>
-			<a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc">%%dirc%%</a>
+            <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour-<?php echo $lang?>">%%hour%%</a>
+			<a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc-<?php echo $lang?>">%%dirc%%</a>
         <p>
         <p class="navi">
-			<a href="<?php echo site_url("menus/index/$lang/");?>" alt="Menus" rel="#overlay" id="menu">%%menu%%</a>
-			<a href="<?php echo site_url("reservations/index/$lang/");?>" alt="Reservations" rel="#overlay" id="rsvn">%%rsvn%%</a>
+			<a href="<?php echo site_url("menus/index/$lang/");?>" alt="Menus" rel="#overlay" id="menu-<?php echo $lang?>">%%menu%%</a>
+			<a href="<?php echo site_url("reservations/index/$lang/");?>" alt="Reservations" rel="#overlay" id="rsvn-<?php echo $lang?>">%%rsvn%%</a>
         <p>
         <p class="navi">
-            <a href="<?php echo site_url("about/index/$lang/");?>" alt="About" rel="#overlay" id="about">%%about%%</a>
+            <a href="<?php echo site_url("about/index/$lang/");?>" alt="About" rel="#overlay" id="about-<?php echo $lang?>">%%about%%</a>
 		</p>
 	</div>
-<?php
-if ($with_intro === true) 
-{
-?>
-    <script>
-    $('#logo-navi').hide();
-    </script>
-<?php
-}
-?>
     <div id="lang" class="content">
-        <a href="<?php echo site_url('home/index/ja/');?>" alt="Japanese" class="<?php if ($lang == 'ja') echo 'active'; ?>">日本語</a>
-        <a href="<?php echo site_url('home/index/en/');?>"alt="English" class="<?php if ($lang == 'en') echo 'active'; ?>">English</a>
+        <a href="<?php echo site_url('home/index/ja/');?>" alt="Japanese" id="ja" class="<?php if ($lang == 'ja') echo 'active'; ?>">日本語</a>
+        <a href="<?php echo site_url('home/index/en/');?>"alt="English" id="en" class="<?php if ($lang == 'en') echo 'active'; ?>">English</a>
     </div>
 
 	<!--Thumbnail Navigation-->
@@ -97,10 +77,10 @@ if ($with_intro === true)
 			<div id="slidecaption"></div>
 			<!--Navigation-->
 			<div id="navigation">
-				<img id="prevslide" src="<?php echo site_url('img/back_dull.png');?>"/><img id="pauseplay" src="<?php echo site_url('img/pause_dull.png');?>"/><img id="nextslide" src="<?php echo site_url('img/forward_dull.png');?>"/>
+				<img id="prevslide" src="<?php echo site_url('img/back_dull.png');?>"/>
+                <img id="pauseplay" src="<?php echo site_url('img/pause_dull.png');?>"/>
+                <img id="nextslide" src="<?php echo site_url('img/forward_dull.png');?>"/>
 			</div>
-			<!--Logo in bar-->
-			<!--<a href="" class="stamp"><img src=""/></a>-->
 		</div>
 	</div>
 

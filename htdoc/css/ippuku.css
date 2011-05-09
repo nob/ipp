@@ -6,6 +6,8 @@ body {
 h2, h3, h4 {
     margin: 0 0 10px;
 }
+
+/** Entire Menu ***/
 .content{
     background-color:#111; 
     background:rgba(0,0,0,0.70); 
@@ -15,6 +17,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endCol
 zoom: 1;
 
 } 
+
+/*** Logo ***/
 #logo-navi{ 
     position:absolute; 
     z-index:100;
@@ -23,20 +27,22 @@ zoom: 1;
     width:240px; 
     text-align:left; 
 }
-.stamp{ 
-    float: right; 
-    margin: 15px 30px 0 0;
+h3{ 
+    padding:10px 20px 10px 20px; 
+    margin: 0px 0px 30px 0px;
 }
+
+/*** Navigation menu ***/
 p.navi { 
     padding:0 15px 10px; 
+    overflow:hidden;
 }
 p.navi a{ 
+    /*
     color:#fff; 
     font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
     text-shadow: #000 0px 1px 0px; 
     line-height:200%; 
-    padding: 5px 10px; 
-    margin: 0px 5px; 
     text-align:center; 
     font-size:12pt; 
     text-decoration:none; 
@@ -50,43 +56,182 @@ p.navi a{
     -moz-box-shadow: 0px 1px 1px #000; 
     -webkit-box-shadow: 0px 1px 1px #000; 
     box-shadow: 0px 1px 1px #000; 
-}
-        
-p.navi a:hover { 
-    background-color:#94989C; 
-    border-color:#B3B4B5; 
-    color:#fff; 
+    */
+    background-image: url(../img/buttons.png); 
+    background-repeat: no-repeat; 
+    text-indent: -9999px;
+    display: block;
+    float: left;
+    padding: 0 0; 
+    margin: 5px 14px 5px 10px; 
 }
 
+/**** Navigation menu items ****/
+p.navi a#hour-en{ 
+    background-position: 0px -22px;
+    width: 50px; 
+    height: 22px;
+}
+p.navi a#hour-en:hover{ 
+    background-position: 0px 0px;
+}
+p.navi a#hour-en.active{ 
+    background-position: 0px -44px;
+}
+p.navi a#hour-ja{ 
+    background-position: -396px -22px;
+    width: 88px; 
+    height: 22px;
+}
+p.navi a#hour-ja:hover{ 
+    background-position: -396px 0px;
+}
+p.navi a#hour-ja.active{ 
+    background-position: -396px -44px;
+}
+
+p.navi a#dirc-en{ 
+    background-position: -65px -22px;
+    width: 82px; 
+    height: 22px;
+}
+p.navi a#dirc-en:hover{ 
+    background-position: -65px 0px;
+}
+p.navi a#dirc-en.active{ 
+    background-position: -65px -44px;
+}
+p.navi a#dirc-ja{ 
+    background-position: -506px -22px;
+    width: 44px; 
+    height: 22px;
+}
+p.navi a#dirc-ja:hover{ 
+    background-position: -506px 0px;
+}
+p.navi a#dirc-ja.active{ 
+    background-position: -506px -44px;
+}
+
+p.navi a#menu-en{ 
+    background-position: -155px -22px;
+    width: 50px; 
+    height: 22px;
+}
+p.navi a#menu-en:hover{ 
+    background-position: -155px 0px;
+}
+p.navi a#menu-en.active{ 
+    background-position: -155px -44px;
+}
+p.navi a#menu-ja{ 
+    background-position: -572px -22px;
+    width: 66px; 
+    height: 22px;
+}
+p.navi a#menu-ja:hover{ 
+    background-position: -572px 0px;
+}
+p.navi a#menu-ja.active{ 
+    background-position: -572px -44px;
+}
+
+p.navi a#rsvn-en{ 
+    background-position: -220px -22px;
+    width: 108px; 
+    height: 22px;
+}
+p.navi a#rsvn-en:hover{ 
+    background-position: -220px 0px;
+}
+p.navi a#rsvn-en.active{ 
+    background-position: -220px -44px;
+}
+p.navi a#rsvn-ja{ 
+    background-position: -660px -22px;
+    width: 66px; 
+    height: 22px;
+}
+p.navi a#rsvn-ja:hover{ 
+    background-position: -660px 0px;
+}
+p.navi a#rsvn-ja.active{ 
+    background-position: -660px -44px;
+}
+
+p.navi a#about-en{ 
+    background-position: -330px -22px;
+    width: 50px; 
+    height: 22px;
+}
+p.navi a#about-en:hover{ 
+    background-position: -330px 0px;
+}
+p.navi a#about-en.active{ 
+    background-position: -330px -44px;
+}
+p.navi a#about-ja{ 
+    background-position: -748px -22px;
+    width: 132px; 
+    height: 22px;
+}
+p.navi a#about-ja:hover{ 
+    background-position: -748px 0px;
+}
+p.navi a#about-ja.active{ 
+    background-position: -748px -44px;
+}
+
+/*** Language bar ***/        
 div#lang { 
     position:absolute; 
     top:0px; 
     right:100px; 
     width:170px; 
-    padding:10px 10px 5px; 
-    text-align: center;
+    padding:15px 10px 5px; 
+    overflow: hidden;
 }
 div#lang a { 
+    background-image: url(../img/buttons.png); 
+    background-repeat: no-repeat; 
+    display: block;
     margin: 0px 15px;
+
+    text-indent: -9999px;
     text-align:center; 
     font:10pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
     text-decoration:none; 
     outline: none; 
     color:#ADACAC;
+    float: left;
+
     cursor: pointer;
 }
-div#lang a:hover {
-    color: #FFF; 
+div#lang a#ja{
+    background-position: -880px -22px;
+    width: 60px;
+    height: 22px;
 }
-div#lang a.active{
-    color: #FA9420; 
+div#lang a#ja:hover {
+    background-position: -880px 0px;
 }
-h3{ 
-    padding:10px 20px 10px 20px; 
-    margin: 0px 0px 20px 0px;
+div#lang a#ja.active{
+    background-position: -880px -44px;
+}
+div#lang a#en{
+    background-position: -944px -22px;
+    width: 50px;
+    height: 22px;
+}
+div#lang a#en:hover {
+    background-position: -944px 0px;
+}
+div#lang a#en.active{
+    background-position: -944px -44px;
 }
 
-/* the overlayed element */
+
+/** Overlayed element ***/
 div#overlay {
     /* must be initially hidden */
     display:none;
@@ -120,7 +265,7 @@ div#overlay p#map-link{
 p#map-link a{
     color: #FFFFFF; 
 }
-/* close button positioned on upper right corner */
+/***** close button positioned on upper right corner ****/
 div#overlay .close {
     background-image:url(../img/close11.png);
     position:absolute;
@@ -135,6 +280,7 @@ div#overlay .close {
     width:25px;
 }
 
+/*** Flash intro elements ***/
 div#flash-wrap {
     width: 100%;
     height: 100%;
@@ -149,20 +295,31 @@ div#flash-wrap {
 div#flash-wrap p {
     width: 900px;
     margin: 0 auto;
-    padding: 10px 50px;
-    text-align:right;
+    padding: 5px 50px;
 }
 div#flash-wrap a {
     color:#FFFFFF;
     font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
     font-weight: bold;
     text-decoration: none;
+    background-image: url(../img/enter-button.png); 
+    background-repeat: no-repeat; 
+    text-indent: -9999px;
+    display:block;
+    width: 150px;
+    height: 32px;
+    margin: 0 0 0 790px;
+}
+div#flash-wrap a:hover {
+    background-position: 0px -38px; 
 }
 div#flash {
     width: 1000px;
     height: 563px;
     margin: 37px auto 0;
 }
+
+/*** Others ***/
 div#nojs-msg {
     width: 100%;
     position: absolute;
