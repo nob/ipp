@@ -14,7 +14,7 @@
 		<script type="text/javascript" src="<?php echo site_url('js/supersized.3.1.3.min.js');?>"></script>
         <!--<script src="http://cdn.jquerytools.org/1.2.5/tiny/jquery.tools.min.js"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
-        <script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>
+        <!--<script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/ippuku.js');?>"></script>
 	</head>
