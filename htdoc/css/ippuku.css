@@ -257,7 +257,7 @@ div#overlay {
 div#overlay div#wrap {
     width: 515px;
     padding: 0px 15px;
-    max-height:527px;
+    max-height:542px;
     overflow-y:auto;
 }
 div#overlay p{
