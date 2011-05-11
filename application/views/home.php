@@ -44,19 +44,20 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
 <?php
 }
 ?>
-    <div id="logo-navi" class="content">
-		<h3><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>"/></a></h3>
-		<p class="navi">
-            <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour-<?php echo $lang?>">%%hour%%</a>
-			<a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc-<?php echo $lang?>">%%dirc%%</a>
-        <p>
-        <p class="navi">
-			<a href="<?php echo site_url("menus/index/$lang/");?>" alt="Menus" rel="#overlay" id="menu-<?php echo $lang?>">%%menu%%</a>
-			<a href="<?php echo site_url("reservations/index/$lang/");?>" alt="Reservations" rel="#overlay" id="rsvn-<?php echo $lang?>">%%rsvn%%</a>
-        <p>
-        <p class="navi">
-            <a href="<?php echo site_url("about/index/$lang/");?>" alt="About" rel="#overlay" id="about-<?php echo $lang?>">%%about%%</a>
-		</p>
+		<h3 id="logo" class="content"><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>"/></a></h3>
+        <div id="navi" class="content">
+            <p>
+                <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour-<?php echo $lang?>">%%hour%%</a>
+                <a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc-<?php echo $lang?>">%%dirc%%</a>
+            </p>
+            <p>
+                <a href="<?php echo site_url("menus/index/$lang/");?>" alt="Menus" rel="#overlay" id="menu-<?php echo $lang?>">%%menu%%</a>
+                <a href="<?php echo site_url("reservations/index/$lang/");?>" alt="Reservations" rel="#overlay" id="rsvn-<?php echo $lang?>">%%rsvn%%</a>
+            </p>
+            <p>
+                <a href="<?php echo site_url("about/index/$lang/");?>" alt="About" rel="#overlay" id="about-<?php echo $lang?>">%%about%%</a>
+            </p>
+        </div>
 	</div>
     <div id="lang" class="content">
         <a href="<?php echo site_url('home/index/ja/');?>" alt="Japanese" id="ja" class="<?php if ($lang == 'ja') echo 'active'; ?>">日本語</a>

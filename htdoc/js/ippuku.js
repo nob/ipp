@@ -5,7 +5,7 @@ jQuery(function($){
     //if flash intro is requested,
     if ($('#flash-wrap').length > 0) {
         //hide logo & navi
-        $('#logo-navi').hide();
+        $('#logo').hide();
         //load intro flash movie.
         flashembed("flash", {src: 'intro.swf', bgcolor: '#000000'});
         //Initialize "Enter" anchor.
@@ -107,8 +107,7 @@ jQuery(function($){
 function closeFlash() {
     $('#flash').hide();
     $('#flash-wrap > p').hide();
-    //$('#logo-navi').css('z-index', '100');
-    $('#logo-navi').fadeIn(600);
+    $('#logo').fadeIn(600);
     $('#flash-wrap').delay(800).fadeOut(1500);
     
     //start playing slide show.
