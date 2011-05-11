@@ -7,9 +7,9 @@ jQuery(function($){
         //hide logo & navi
         $('#logo-navi').hide();
         //load intro flash movie.
-        flashembed("flash", "intro.swf");
+        flashembed("flash", {src: 'intro.swf', bgcolor: '#000000'});
         //Initialize "Enter" anchor.
-        $('#flash-wrap a').click(function() {
+        $('#enter').click(function() {
             event.preventDefault();
             closeFlash();
         });
