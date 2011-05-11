@@ -1,7 +1,6 @@
 jQuery(function($){
 
     var autoplay = 0;
-
     //if flash intro is requested,
     if ($('#flash-wrap').length > 0) {
         //hide logo & navi
@@ -12,7 +11,6 @@ jQuery(function($){
             bgcolor: '#000000',
             expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf",
         });
-        //load intro flash movie.
         //Initialize "Enter" anchor.
         $('#enter').click(function() {
             event.preventDefault();
@@ -79,8 +77,8 @@ jQuery(function($){
     //Initialize overlay.
     var overlays = $('a[rel]').overlay({
         speed: 'slow', 
-        left: 90, 
-        top: 100,
+        left: 90, //This parameter is modified. Now it's position from right. 
+        top: 85,
         onBeforeLoad: function() { 
             //activate the trigger to change it's color.
             this.getTrigger().toggleClass('active', true);
