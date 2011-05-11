@@ -20,7 +20,7 @@
 	</head>
 <body>		
     <noscript>    
-        <div id="nojs-msg">Please turn on Javascript on your web browser to see this site correctly.</div>
+        <div class="error-msg">Please turn on Javascript on your web browser to see this website correctly.</div>
     </noscript>    
 <?php
 if ($with_intro === true) 
@@ -28,7 +28,14 @@ if ($with_intro === true)
 ?>
     <!-- flash movie layer-->
     <div id="flash-wrap">
-        <div id="flash"></div>
+        <div id="flash">
+            <div id="noflash-msg">
+                <img src="<?php echo site_url('img/flashplayer_100x100.jpg');?>" />
+                <h3>Get Adobe Flash Player</h3>
+                <p>You must have the latest Flash player installed to see this website correctly. </p>
+                <p>You can <a href="http://get.adobe.com/flashplayer/" target="_blank">download it here</a>.</p>
+            </div>
+        </div>
         <p><a href="<?php echo site_url('home');?>" id="enter" alt="Enter Ippuku">Enter Ippuku</a></p>
     </div>
 <?php

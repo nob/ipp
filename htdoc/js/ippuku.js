@@ -7,7 +7,13 @@ jQuery(function($){
         //hide logo & navi
         $('#logo').hide();
         //load intro flash movie.
-        flashembed("flash", {src: 'intro.swf', bgcolor: '#000000'});
+        flashembed("flash", {
+            src: 'intro.swf', 
+            bgcolor: '#000000',
+            version: [20, 0],
+            expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf",
+        });
+        //load intro flash movie.
         //Initialize "Enter" anchor.
         $('#enter').click(function() {
             event.preventDefault();
