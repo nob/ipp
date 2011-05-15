@@ -358,5 +358,31 @@ $config['rewrite_short_tags'] = FALSE;
 $config['proxy_ips'] = '';
 
 
+/*
+|--------------------------------------------------------------------------
+| DEVELOPMENT MODE  
+|--------------------------------------------------------------------------
+|  If dev_mode is set TRUE,  
+|  - Access to controlers defined $config['dev_ctlrs'] will be allowed. //todo 
+|  - Server IP address will be displayed at page header.  
+|
+*/
+$config['dev_mode']  = FALSE;
+$config['dev_ctlrs'] = array('');
+
+/*
+|--------------------------------------------------------------------------
+| TRANSLATING MODE 
+|--------------------------------------------------------------------------
+|  If translating_mode is set TRUE,  
+|  - All texts and messages difined in files under application/language/ dir 
+|    will not be displayed to user's browser, the keys of the array in 
+|    the file (=text codes or message codes) will be displayed instead.
+|  
+*/
+$config['translating_mode'] = false;
+
+
+
 /* End of file config.php */
 /* Location: ./application/config/config.php */
