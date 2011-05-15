@@ -51,7 +51,7 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
 <?php
 }
 ?>
-		<h3 id="logo" class="content"><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>"/></a></h3>
+		<h3 id="logo" class="content" <?php if ($with_intro === true) { echo 'style="display:none"';}?>><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>"/></a></h3>
         <div id="navi" class="content">
             <p>
                 <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour-<?php echo $lang?>">%%hour%%</a>

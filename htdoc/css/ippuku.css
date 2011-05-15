@@ -7,10 +7,9 @@ body {
     background-color:#111; 
     background:rgba(0,0,0,0.70); 
     color:#fff;
-filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
--ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
-zoom: 1;
-
+    zoom: 1;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
 } 
 
 /*** Logo ***/
@@ -36,25 +35,6 @@ div#navi p {
     overflow:hidden;
 }
 div#navi a{ 
-    /*
-    color:#fff; 
-    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
-    text-shadow: #000 0px 1px 0px; 
-    line-height:200%; 
-    text-align:center; 
-    font-size:12pt; 
-    text-decoration:none; 
-    outline: none; 
-    color:#ddd; 
-    background:#222; 
-    border-top:1px solid #333; 
-    -moz-border-radius:3px; 
-    -webkit-border-radius:3px; 
-    border-radius:3px; 
-    -moz-box-shadow: 0px 1px 1px #000; 
-    -webkit-box-shadow: 0px 1px 1px #000; 
-    box-shadow: 0px 1px 1px #000; 
-    */
     background-image: url(../img/buttons.png); 
     background-repeat: no-repeat; 
     text-indent: -9999px;
@@ -233,24 +213,8 @@ div#lang a#en.active{
 div#overlay {
     /* must be initially hidden */
     display:none;
-    /*
-    background:url(../img/window-frame.png) no-repeat;
-    border:3px solid #FFF; 
-    -moz-border-radius:8px; 
-    -webkit-border-radius:8px; 
-    */
-    /*
-    height: 600px;
-    */
     width: 550px;
     padding: 35px 0px 15px;
-    /* place overlay on top of other elements 
-    z-index:10;
-    */
-    /* CSS3 styling for latest browsers
-    -moz-box-shadow:0 0 90px 5px #000;
-    -webkit-box-shadow: 0 0 90px #000;  
-    */
     font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
     overflow-y:auto;
 }
@@ -274,10 +238,6 @@ p#map-link a{
 div#overlay .close {
     background-image:url(../img/close11.png);
     position:absolute;
-/*
-    right:-15px;
-    top:-15px;
-*/
     right:4px;
     top:4px;
     cursor:pointer;
@@ -299,8 +259,8 @@ div#flash-wrap {
 }
 div#flash {
     background-color:#000000;
-    width: 1000px;
-    height: 563px;
+    width: 900px;
+    height: 507px;
     margin: 37px auto 0;
 }
 div#flash-wrap p {
@@ -359,6 +319,7 @@ div#noflash-msg{
     color: #FFFFFF;
     overflow: hidden;
     padding: 100px 200px;
+    display: none;
 }
 div#dev-info {
     color: #FFFFFF;

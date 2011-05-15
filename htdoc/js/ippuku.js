@@ -3,17 +3,16 @@ jQuery(function($){
     var autoplay = 0;
     //if flash intro is requested,
     if ($('#flash-wrap').length > 0) {
-        //hide logo & navi
-        $('#logo').hide();
+        $('#noflash-msg').show();
         //load intro flash movie.
         flashembed("flash", {
             src: 'intro.swf', 
             bgcolor: '#000000',
-            expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf",
+            expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf"
         });
         //Initialize "Enter" anchor.
         $('#enter').click(function() {
-            event.preventDefault();
+            event.preventDefault ? event.preventDefault() : event.returnValue = false;
             closeFlash();
         });
     //or if flash intro is not requested,
@@ -86,6 +85,10 @@ jQuery(function($){
             var wrap = this.getOverlay().find("#wrap"); 
             // load the page specified in the trigger 
             wrap.load(this.getTrigger().attr("href")); 
+            //for IE & jQuery fadeIn() bug.
+            if (jQuery.browser.msie) {
+                $('#overlay').css('filter', 'progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A)');
+            }   
         },
         onClose: function() { 
             //deactivate the trigger to change it's color.
@@ -95,7 +98,7 @@ jQuery(function($){
 
     //Initialize langage button.
     $('#lang a').click(function(){
-        event.preventDefault();
+        event.preventDefault ? event.preventDefault() : event.returnValue = false;
         $.each(overlays, function (key, val) {
             var ol = overlays.eq(key).overlay();
             if (ol.isOpened()) ol.close(); 
@@ -110,7 +113,11 @@ jQuery(function($){
 function closeFlash() {
     $('#flash').hide();
     $('#flash-wrap > p').hide();
-    $('#logo').fadeIn(600);
+    $('#logo').fadeIn(600, function() {
+        if (jQuery.browser.msie) {
+            $('#logo').removeAttr('style');
+       } 
+    });
     $('#flash-wrap').delay(800).fadeOut(1500);
     
     //start playing slide show.
