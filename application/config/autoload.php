@@ -80,7 +80,7 @@ $autoload['helper'] = array('url');
 |
 */
 
-$autoload['config'] = array('ippuku_dev_mode');
+$autoload['config'] = array();
 
 
 /*
