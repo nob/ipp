@@ -79,16 +79,22 @@ jQuery(function($){
         left: 90, //This parameter is modified. Now it's position from right. 
         top: 85,
         onBeforeLoad: function() { 
-            //activate the trigger to change it's color.
-            this.getTrigger().toggleClass('active', true);
-            // grab wrapper element inside content 
-            var wrap = this.getOverlay().find("#wrap"); 
-            // load the page specified in the trigger 
-            wrap.load(this.getTrigger().attr("href")); 
             //for IE & jQuery fadeIn() bug.
             if (jQuery.browser.msie) {
                 $('#overlay').css('filter', 'progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A)');
             }   
+            // load the page specified in the trigger 
+            $('#wrap').hide('fast'); //hide current content by fast before loading next.
+            $('#wrap').load(this.getTrigger().attr("href")); 
+            $('#wrap').show('slow'); //now show the content.
+            //activate the trigger to change it's color.
+            this.getTrigger().toggleClass('active', true);
+        },
+        onLoad: function() {
+            // grab wrapper element inside content 
+            //var wrap = this.getOverlay().find("#wrap"); 
+            // load the page specified in the trigger 
+            //wrap.load(this.getTrigger().attr("href")); 
         },
         onClose: function() { 
             //deactivate the trigger to change it's color.
