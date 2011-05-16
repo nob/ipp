@@ -19,19 +19,32 @@ h3#logo{
     top:30px; 
     left:90px; 
     width:200px; 
-    padding: 0 20px 40px; 
+    padding: 0 10px 30px 30px; 
     margin: 0 auto;
+    -webkit-border-top-left-radius: 80px;
+    -webkit-border-top-right-radius: 80px;
+    -moz-border-radius-topleft: 80px;
+    -moz-border-radius-topright: 80px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
 }
 
 /*** Navigation menu ***/
 div#navi{ 
     position:absolute; 
-    top:360px; 
+    top:350px; 
     left:90px; 
     width:240px; 
+    -webkit-border-bottom-left-radius: 80px;
+    -webkit-border-bottom-right-radius: 80px;
+    -moz-border-radius-bottomleft: 80px;
+    -moz-border-radius-bottomright: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    padding:0 0 20px 0; 
 }
 div#navi p { 
-    padding:0 15px 10px; 
+    padding:0 5px 10px 25px; 
     overflow:hidden;
 }
 div#navi a{ 
@@ -168,6 +181,12 @@ div#lang {
     width:170px; 
     padding:15px 10px 5px; 
     overflow: hidden;
+    -webkit-border-bottom-left-radius: 60px;
+    -webkit-border-bottom-right-radius: 60px;
+    -moz-border-radius-bottomleft: 60px;
+    -moz-border-radius-bottomright: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
 }
 div#lang a { 
     background-image: url(../img/buttons.png); 
@@ -217,6 +236,9 @@ div#overlay {
     padding: 35px 0px 15px;
     font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
     overflow-y:auto;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
 }
 div#overlay div#wrap {
     width: 515px;
@@ -238,8 +260,8 @@ p#map-link a{
 div#overlay .close {
     background-image:url(../img/close11.png);
     position:absolute;
-    right:4px;
-    top:4px;
+    right:8px;
+    top:8px;
     cursor:pointer;
     height:25px;
     width:25px;
