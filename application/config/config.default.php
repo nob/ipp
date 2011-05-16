@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://ve.th7vs8bf.vesrv.com/new/';
+$config['base_url']	= 'http://www.ippukuberkeley.com';
 
 /*
 |--------------------------------------------------------------------------
