@@ -86,15 +86,9 @@ jQuery(function($){
             // load the page specified in the trigger 
             $('#wrap').hide('fast'); //hide current content by fast before loading next.
             $('#wrap').load(this.getTrigger().attr("href")); 
-            $('#wrap').show('slow'); //now show the content.
+            $('#wrap').show('fast'); //now show the content by fast.
             //activate the trigger to change it's color.
             this.getTrigger().toggleClass('active', true);
-        },
-        onLoad: function() {
-            // grab wrapper element inside content 
-            //var wrap = this.getOverlay().find("#wrap"); 
-            // load the page specified in the trigger 
-            //wrap.load(this.getTrigger().attr("href")); 
         },
         onClose: function() { 
             //deactivate the trigger to change it's color.
