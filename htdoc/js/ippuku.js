@@ -79,8 +79,8 @@ jQuery(function($){
         left: 90, //This parameter is modified. Now it's position from right. 
         top: 85,
         onBeforeLoad: function() { 
-            //for IE & jQuery fadeIn() bug.
-            if (jQuery.browser.msie) {
+            //for IE8 (or lower) & jQuery fadeIn() bug.
+            if (jQuery.browser.msie && parseInt(jQuery.browser.version) <= 8) {
                 $('#overlay').css('filter', 'progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A)');
             }   
             // load the page specified in the trigger 

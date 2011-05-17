@@ -7,9 +7,6 @@ body {
     background-color:#111; 
     background:rgba(0,0,0,0.70); 
     color:#fff;
-    zoom: 1;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
-    -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A);
 } 
 
 /*** Logo ***/

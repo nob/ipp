@@ -3,10 +3,10 @@
 	<head>
 		<title>Ippuku</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku.css');?>" type="text/css" media="screen, projection">  
-        <!--[if IE]>
+        <!--[if lte IE 8]>
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku-ie.css');?>" type="text/css" media="screen, projection">  
         <![endif]-->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
