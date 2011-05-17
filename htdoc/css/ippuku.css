@@ -256,6 +256,7 @@ p#map-link a{
 /***** close button positioned on upper right corner ****/
 div#overlay .close {
     background-image:url(../img/close.png);
+    background-position: 0px -25px;
     position:absolute;
     right:8px;
     top:8px;
@@ -265,6 +266,7 @@ div#overlay .close {
 }
 div#overlay .close:hover {
     background-image:url(../img/close.png);
+    background-position: 0px 0px;
     position:absolute;
     right:8px;
     top:8px;
