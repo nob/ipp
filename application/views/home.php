@@ -82,7 +82,7 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
 				<span class="slidenumber"></span>/<span class="totalslides"></span>
 			</div>
 			<!--Slide captions displayed here-->
-			<div id="slidecaption"></div>
+			<!--<div id="slidecaption"></div>-->
 			<!--Navigation-->
 			<div id="navigation">
 				<img id="prevslide" src="<?php echo site_url('img/back_dull.png');?>"/>
