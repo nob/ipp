@@ -83,9 +83,11 @@ Comment out until contents of "Menu" and "About" is fixd.
 	<div id="controls-wrapper">
 		<div id="controls">
 			<!--Slide counter-->
+            <!--
 			<div id="slidecounter">
 				<span class="slidenumber"></span>/<span class="totalslides"></span>
 			</div>
+            -->
 			<!--Slide captions displayed here-->
 			<!--<div id="slidecaption"></div>-->
 			<!--Navigation-->
