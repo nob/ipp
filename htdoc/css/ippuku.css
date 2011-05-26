@@ -335,6 +335,15 @@ div#flash-wrap a#enter:hover {
     position:fixed; 
     background:none; 
 } 
+#navigation {
+    padding: 10px 10px 10px;
+    -webkit-border-top-left-radius: 60px;
+    -webkit-border-top-right-radius: 60px;
+    -moz-top-radius-bottomleft: 60px;
+    -moz-top-radius-bottomright: 60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
 
 /*** Others ***/
 div#nojs-msg{

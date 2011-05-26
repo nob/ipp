@@ -91,7 +91,7 @@ Comment out until contents of "Menu" and "About" is fixd.
 			<!--Slide captions displayed here-->
 			<!--<div id="slidecaption"></div>-->
 			<!--Navigation-->
-			<div id="navigation">
+			<div id="navigation" class="content">
 				<img id="prevslide" src="<?php echo site_url('img/back_dull.png');?>"/>
                 <img id="pauseplay" src="<?php echo site_url('img/pause_dull.png');?>"/>
                 <img id="nextslide" src="<?php echo site_url('img/forward_dull.png');?>"/>
