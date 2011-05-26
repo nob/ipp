@@ -6,9 +6,9 @@
 |
 */
 
-$lang['about']  = 'About';
+//$lang['about']  = 'About';
 $lang['dirc']   = 'Directions';
 $lang['hour']   = 'Hours';
-$lang['menu']   = 'Menus';
+//$lang['menu']   = 'Menus';
 $lang['rsvn']   = 'Reservations';
 
