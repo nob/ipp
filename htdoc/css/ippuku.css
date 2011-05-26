@@ -8,7 +8,9 @@ body {
     background:rgba(0,0,0,0.70); 
     color:#fff;
 } 
-
+h3 {
+    margin-bottom: 15px;
+}
 /*** Logo ***/
 h3#logo{ 
     position:absolute; 
@@ -234,7 +236,7 @@ div#overlay {
     /* must be initially hidden */
     display:none;
     width: 550px;
-    padding: 35px 0px 15px;
+    padding: 20px 0px 15px;
     font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
     overflow-y:auto;
     -moz-border-radius: 20px;
@@ -247,8 +249,11 @@ div#overlay div#wrap {
     max-height:550px;
     overflow-y:auto;
 }
+div#overlay div#wrap p{
+    line-height: 140%; 
+}
 div#overlay p{
-    margin: 0 0 15px;
+    margin: 0 0 5px;
 }
 div#overlay p#map-link{
     margin: 0 0 5px ! important;
