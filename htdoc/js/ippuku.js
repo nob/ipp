@@ -62,12 +62,14 @@ jQuery(function($){
                                             {image : 'img/slide/img_0423.jpg'},  
                                             {image : 'img/slide/img_0445.jpg'},  
                                             {image : 'img/slide/img_0438.jpg'},  
+                                            {image : 'img/slide/img_0447.jpg'},  
                                             {image : 'img/slide/img_0428.jpg'},  
                                             {image : 'img/slide/img_0420.jpg'},  
                                             {image : 'img/slide/img_0419.jpg'},  
                                             {image : 'img/slide/img_0431.jpg'},  
                                             {image : 'img/slide/img_0417.jpg'},  
-                                            {image : 'img/slide/img_0418.jpg'}  
+                                            {image : 'img/slide/img_0418.jpg'},  
+                                            {image : 'img/slide/img_0446.jpg'}  
                                     ]
                                     
     }); 
