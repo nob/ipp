@@ -36,7 +36,7 @@ jQuery(function($){
         keyboard_nav            :   1,		//Keyboard navigation on/off
         performance				:	1,		//0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
         image_protect			:	0,		//Disables image dragging and right click with Javascript
-        image_path				:	'/new/img/', //Default image path
+        image_path				:	'img/', //Default image path
 
         //Size & Position
         min_width		        :   0,		//Min width allowed (in pixels)
@@ -52,23 +52,22 @@ jQuery(function($){
         slide_counter           :   1,		//Display slide numbers
         slide_captions          :   0,		//Slide caption (Pull from "title" in slides array)
         slides 					:  	[		//Slideshow Images
-                                            //{image : '<?php echo site_url("img/slide/img_0436.jpg");?>', title : 'AAA by BBB', url : ''},  
-                                            {image : '/new/img/slide/img_0436.jpg'},  
-                                            {image : '/new/img/slide/img_0422.jpg'},  
-                                            {image : '/new/img/slide/img_0440.jpg'},  
-                                            {image : '/new/img/slide/img_0424.jpg'},  
-                                            {image : '/new/img/slide/img_0426.jpg'},  
-                                            {image : '/new/img/slide/img_0433.jpg'},  
-                                            {image : '/new/img/slide/img_0435.jpg'},  
-                                            {image : '/new/img/slide/img_0423.jpg'},  
-                                            {image : '/new/img/slide/img_0445.jpg'},  
-                                            {image : '/new/img/slide/img_0438.jpg'},  
-                                            {image : '/new/img/slide/img_0428.jpg'},  
-                                            {image : '/new/img/slide/img_0420.jpg'},  
-                                            {image : '/new/img/slide/img_0419.jpg'},  
-                                            {image : '/new/img/slide/img_0431.jpg'},  
-                                            {image : '/new/img/slide/img_0417.jpg'},  
-                                            {image : '/new/img/slide/img_0418.jpg'}  
+                                            {image : 'img/slide/img_0436.jpg'},  
+                                            {image : 'img/slide/img_0422.jpg'},  
+                                            {image : 'img/slide/img_0440.jpg'},  
+                                            {image : 'img/slide/img_0424.jpg'},  
+                                            {image : 'img/slide/img_0426.jpg'},  
+                                            {image : 'img/slide/img_0433.jpg'},  
+                                            {image : 'img/slide/img_0435.jpg'},  
+                                            {image : 'img/slide/img_0423.jpg'},  
+                                            {image : 'img/slide/img_0445.jpg'},  
+                                            {image : 'img/slide/img_0438.jpg'},  
+                                            {image : 'img/slide/img_0428.jpg'},  
+                                            {image : 'img/slide/img_0420.jpg'},  
+                                            {image : 'img/slide/img_0419.jpg'},  
+                                            {image : 'img/slide/img_0431.jpg'},  
+                                            {image : 'img/slide/img_0417.jpg'},  
+                                            {image : 'img/slide/img_0418.jpg'}  
                                     ]
                                     
     }); 
@@ -126,7 +125,7 @@ function closeFlash() {
 
 function translateNavi() {
     var url = $('#lang a.active').attr('href');
-    var lang = jQuery.url.setUrl(url).segment(3);
+    var lang = jQuery.url.setUrl(url).segment(2);
     var current_lang = (lang === 'en') ? 'ja' : 'en';
     var url = url.replace('\/index\/', '\/json\/');
     $.getJSON(url, function(data) {
