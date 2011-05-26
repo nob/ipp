@@ -41,7 +41,7 @@ div#navi{
     padding:0 0 20px 0; 
 }
 div#navi p { 
-    padding:0 5px 10px 25px; 
+    padding:0 15px 10px 15px; 
     overflow:hidden;
 }
 div#navi a{ 
@@ -49,9 +49,13 @@ div#navi a{
     background-repeat: no-repeat; 
     text-indent: -9999px;
     display: block;
-    float: left;
     padding: 0 0; 
+    margin: 5px auto; 
+    /*
+    //Comment out until more navi item is added.
     margin: 5px 14px 5px 10px; 
+    float: left;
+    */
 }
 
 /**** Navigation menu items ****/
