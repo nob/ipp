@@ -132,10 +132,16 @@ function translateNavi() {
     var url = url.replace('\/index\/', '\/json\/');
     $.getJSON(url, function(data) {
         $.each(data, function (key, val) {
-            $('#' + key + '-' + current_lang).text(val);
-            var new_url = $('#' + key + '-' + current_lang).attr('href').replace('\/' + current_lang, '\/' + lang);
-            $('#' + key + '-' + current_lang).attr('href', new_url);
-            $('#' + key + '-' + current_lang).attr('id', key + '-' + lang);
+            if (key == 'html_title') {
+                $('title').text(val);
+            } else if (key == 'meta_description') {
+                $('meta[name=description]').attr('content', val);
+            } else {
+                $('#' + key + '-' + current_lang).text(val);
+                var new_url = $('#' + key + '-' + current_lang).attr('href').replace('\/' + current_lang, '\/' + lang);
+                $('#' + key + '-' + current_lang).attr('href', new_url);
+                $('#' + key + '-' + current_lang).attr('id', key + '-' + lang);
+            }
         });
     });
 } 

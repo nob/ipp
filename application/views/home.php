@@ -1,10 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		<title>Ippuku | Yakitori and Shochu dining bar at Berkeley, CA.</title>
+		<title>%%html_title%%</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="description" content="Yakitori and Shochu. Japanese Izakaya style dining bar at Berkeley, CA." />
+		<meta name="description" content="%%meta_description%%" />
 		<meta name="keywords" content="Japanese, Izakaya, Yakitori, Shochu, Berkeley, 焼き鳥, 焼鳥, 焼酎, 居酒屋, バークレー" />
         <meta name="robots" content="index, nofollow, noodp">
         <meta name="google" content="notranslate" />
