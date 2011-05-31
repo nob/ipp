@@ -1,9 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		<title>Ippuku</title>
+		<title>Ippuku | Yakitori and Shochu dining bar at Berkeley.</title>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="Yakitori and Shochu. Japanese Izakaya style dining bar at Berkeley." />
+		<meta name="keywords" content="Japanese, Izakaya, Yakitori, Shochu, Berkeley, 焼き鳥, 焼鳥, 焼酎, 居酒屋, バークレー" />
+        <meta name="robots" content="index, nofollow, noodp">
+        <meta name="google" content="notranslate" />
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku.css');?>" type="text/css" media="screen, projection">  
         <!--[if lte IE 8]>
