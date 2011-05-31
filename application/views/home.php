@@ -47,10 +47,10 @@ if ($with_intro === true)
     <div id="flash-wrap">
         <div id="flash">
             <div id="noflash-msg">
-                <img src="<?php echo site_url('img/flashplayer_100x100.jpg');?>" />
+                <img src="<?php echo site_url('img/flashplayer_100x100.jpg');?>" alt="Flash player"/>
                 <h3>Get Adobe Flash Player</h3>
                 <p>You must have the latest Flash player installed to see this website correctly. </p>
-                <p>You can <a href="http://get.adobe.com/flashplayer/" target="_blank">download it here</a>.</p>
+                <p>You can <a href="http://get.adobe.com/flashplayer/" alt="dowonlod Flash player" target="_blank">download it here</a>.</p>
             </div>
         </div>
         <p><a href="<?php echo site_url('home');?>" id="enter" alt="Enter Ippuku">Enter Ippuku</a></p>
@@ -68,23 +68,23 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
 <?php
 }
 ?>
-		<h3 id="logo" class="content" <?php if ($with_intro === true) { echo 'style="display:none"';}?>><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>"/></a></h3>
+		<h1 id="logo" class="content" <?php if ($with_intro === true) { echo 'style="display:none"';}?>><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>" alt="Ippuku logo"/></a></h1>
         <div id="navi" class="content">
-            <p>
+            <h2>
                 <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour-<?php echo $lang?>">%%hour%%</a>
-            </p>
-            <p>
+            </h2>
+            <h2>
                 <a href="<?php echo site_url("reservations/index/$lang/");?>" alt="Reservations" rel="#overlay" id="rsvn-<?php echo $lang?>">%%rsvn%%</a>
-            </p>
-            <p>
+            </h2>
+            <h2>
                 <a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc-<?php echo $lang?>">%%dirc%%</a>
-            </p>
+            </h2>
 <!--
 Comment out until contents of "Menu" and "About" is fixd.
-            <p>
+            <h2>
                 <a href="<?php echo site_url("menus/index/$lang/");?>" alt="Menus" rel="#overlay" id="menu-<?php echo $lang?>">%%menu%%</a>
                 <a href="<?php echo site_url("about/index/$lang/");?>" alt="About" rel="#overlay" id="about-<?php echo $lang?>">%%about%%</a>
-            </p>
+            </h2>
 -->
         </div>
 	</div>
@@ -109,9 +109,9 @@ Comment out until contents of "Menu" and "About" is fixd.
 			<!--<div id="slidecaption"></div>-->
 			<!--Navigation-->
 			<div id="navigation" class="content">
-				<img id="prevslide" src="<?php echo site_url('img/back_dull.png');?>"/>
-                <img id="pauseplay" src="<?php echo site_url('img/pause_dull.png');?>"/>
-                <img id="nextslide" src="<?php echo site_url('img/forward_dull.png');?>"/>
+				<img id="prevslide" src="<?php echo site_url('img/back_dull.png');?>" alt="prev"/>
+                <img id="pauseplay" src="<?php echo site_url('img/pause_dull.png');?>" alt="pause & play"/>
+                <img id="nextslide" src="<?php echo site_url('img/forward_dull.png');?>" alt="next"/>
 			</div>
 		</div>
 	</div>
