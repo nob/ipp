@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /img/
+Disallow: /css/
+Disallow: /index.php
+Disallow: /index.default.php
+Disallow: /intro.swf
+Disallow: /js/
+Allow: /
+
