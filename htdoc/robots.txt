@@ -5,5 +5,11 @@ Disallow: /index.php
 Disallow: /index.default.php
 Disallow: /intro.swf
 Disallow: /js/
+Disallow: /hours/
+Disallow: /reservations/
+Disallow: /directions/
+Disallow: /menus/
+Disallow: /about/
+Disallow: /home/index/
 Allow: /
 
