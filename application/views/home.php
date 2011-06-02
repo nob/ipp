@@ -8,6 +8,7 @@
 		<meta name="keywords" content="Japanese, Izakaya, Yakitori, Shochu, Berkeley, 焼き鳥, 焼鳥, 焼酎, 居酒屋, バークレー" />
         <meta name="robots" content="index, nofollow, noodp">
         <meta name="google" content="notranslate" />
+        <link rel="shortcut icon" href="<?php echo site_url('img/favicon.ico');?>">
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku.css');?>" type="text/css" media="screen, projection">  
         <!--[if lte IE 8]>
