@@ -6,7 +6,7 @@
 |
 */
 $lang['html_title'] = '一服 | バークレーにある焼鳥と焼酎の居酒屋';
-$lang['meta_description'] = 'カリフォルニア、バークレーにある焼鳥と焼酎の居酒屋。2130 Center Street, Berkeley, CA. ご予約: (510) 665-1969';
+$lang['meta_description'] = 'カリフォルニア、バークレーにある焼鳥と焼酎の居酒屋。住所: 2130 Center Street, Berkeley, CA. ご予約: (510) 665-1969';
 //$lang['about']  = '一服について';
 $lang['dirc']   = '地図';
 $lang['hour']   = '営業時間';
