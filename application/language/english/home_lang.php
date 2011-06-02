@@ -7,7 +7,7 @@
 */
 
 $lang['html_title'] = 'Ippuku | Yakitori and Shochu dining bar in Berkeley, CA.'; 
-$lang['meta_description'] = 'Yakitori and Shochu. Japanese Izakaya style dining bar. 2130 Center Street, Berkeley, CA. Reservation: (510) 665-1969 ';
+$lang['meta_description'] = 'Yakitori and Shochu. Japanese Izakaya style dining bar. Address: 2130 Center Street, Berkeley, CA. Reservation: (510) 665-1969 ';
 //$lang['about']  = 'About';
 $lang['dirc']   = 'Directions';
 $lang['hour']   = 'Hours';
