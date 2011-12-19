@@ -55,24 +55,24 @@ jQuery(function($){
         slide_counter           :   1,		//Display slide numbers
         slide_captions          :   0,		//Slide caption (Pull from "title" in slides array)
         slides 					:  	[		//Slideshow Images
-                                            {image : '/img/slide/img_0436.jpg'},  
-                                            {image : '/img/slide/img_0422.jpg'},  
-                                            {image : '/img/slide/img_0440.jpg'},  
-                                            {image : '/img/slide/img_0424.jpg'},  
-                                            {image : '/img/slide/img_0426.jpg'},  
-                                            {image : '/img/slide/img_0445.jpg'},  
-                                            {image : '/img/slide/img_0433.jpg'},  
-                                            {image : '/img/slide/img_0435.jpg'},  
-                                            {image : '/img/slide/img_0423.jpg'},  
-                                            {image : '/img/slide/img_0438.jpg'},  
-                                            {image : 'img/slide/img_0447.jpg'},  
-                                            {image : 'img/slide/img_0428.jpg'},  
-                                            {image : 'img/slide/img_0420.jpg'},  
-                                            {image : 'img/slide/img_0419.jpg'},  
-                                            {image : 'img/slide/img_0431.jpg'},  
-                                            {image : 'img/slide/img_0417.jpg'},  
-                                            {image : 'img/slide/img_0418.jpg'},  
-                                            {image : 'img/slide/img_0446.jpg'}  
+                                            {image : '/img/slide_c/img_0436.jpg'},  
+                                            {image : '/img/slide_c/img_0422.jpg'},  
+                                            {image : '/img/slide_c/img_0440.jpg'},  
+                                            {image : '/img/slide_c/img_0424.jpg'},  
+                                            {image : '/img/slide_c/img_0426.jpg'},  
+                                            {image : '/img/slide_c/img_0445.jpg'},  
+                                            {image : '/img/slide_c/img_0433.jpg'},  
+                                            {image : '/img/slide_c/img_0435.jpg'},  
+                                            {image : '/img/slide_c/img_0423.jpg'},  
+                                            {image : '/img/slide_c/img_0438.jpg'},  
+                                            {image : 'img/slide_c/img_0447.jpg'},  
+                                            {image : 'img/slide_c/img_0428.jpg'},  
+                                            {image : 'img/slide_c/img_0420.jpg'},  
+                                            {image : 'img/slide_c/img_0419.jpg'},  
+                                            {image : 'img/slide_c/img_0431.jpg'},  
+                                            {image : 'img/slide_c/img_0417.jpg'},  
+                                            {image : 'img/slide_c/img_0418.jpg'},  
+                                            {image : 'img/slide_c/img_0446.jpg'}  
                                     ]
                                     
     }); 

@@ -21,7 +21,7 @@
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
         <!--<script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
-		<script type="text/javascript" src="<?php echo site_url('js/ippuku.js');?>"></script>
+		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v2.js');?>"></script>
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
