@@ -8,7 +8,10 @@ jQuery(function($){
         flashembed("flash", {
             src: 'intro.swf', 
             bgcolor: '#000000',
-            expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf"
+            expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf",
+            onFail: function() {
+                closeFlash();
+            }
         });
         //Initialize "Enter" anchor.
         $('#enter').click(function() {
