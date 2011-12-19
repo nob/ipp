@@ -12,5 +12,6 @@ Disallow: /reservations/
 Disallow: /directions/
 Disallow: /menus/
 Disallow: /about/
+Disallow: /home/
 Disallow: /home/index/
 
