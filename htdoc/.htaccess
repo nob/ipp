@@ -9,11 +9,6 @@ AddDefaultCharset UTF-8
 RewriteCond %{HTTP_HOST} ^ippukuberkeley\.com$ [NC]
 RewriteRule ^(.*)$ http://www.ippukuberkeley.com/$1 [R=301,L]
 
-#Rewrite for Codeigniter.
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /index.php/$1 [L]
-
 #Compress text contents.
 <ifModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
@@ -47,5 +42,10 @@ RewriteRule ^(.+)-v([1-9]+)\.(.+)$ /$1.$3 [L]
 #Remove ETag.
 FileETag None
 #---------------------------------------------------------------
+
+#Rewrite for Codeigniter.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L]
 
 
