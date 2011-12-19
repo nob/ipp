@@ -1,5 +1,6 @@
 Options -Indexes
 DirectoryIndex index.php
+
 RewriteEngine on
 
 #Charset for html / plaintext
@@ -11,7 +12,7 @@ RewriteRule ^(.*)$ http://www.ippukuberkeley.com/$1 [R=301,L]
 
 #Compress text contents.
 <ifModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript application/json
 </ifModule>
 
 #---------------------------------------------------------------
@@ -48,4 +49,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ /index.php/$1 [L]
 
-
+#force IE to use the most up to date rendering engine that it has available.
+<IfModule mod_headers.c>
+    BrowserMatch MSIE ie
+    Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+</ifModule>
