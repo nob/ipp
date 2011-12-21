@@ -30,9 +30,9 @@
         color: #457039;
         border-radius: 10px;
         margin: 0 auto;
-        width: 200px;
+        width: 120px;
         padding: 10px 5px;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
     a#back:hover {
