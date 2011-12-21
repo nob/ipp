@@ -9,7 +9,7 @@
         <meta name="google" content="notranslate" />
         <link rel="shortcut icon" href="<?php echo site_url('img/favicon.ico');?>">
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
-        <link rel="stylesheet" href="<?php echo site_url('css/ippuku.css');?>" type="text/css" media="screen, projection">  
+        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v2.css');?>" type="text/css" media="screen, projection">  
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku-ie.css');?>" type="text/css" media="screen, projection">  
         <![endif]-->
@@ -20,7 +20,7 @@
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
         <!--<script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
-		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v2.js');?>"></script>
+		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v3.js');?>"></script>
         <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-23614931-1']);
@@ -106,9 +106,9 @@ Comment out until contents of "Menu" and "About" is fixd.
 			<!--<div id="slidecaption"></div>-->
 			<!--Navigation-->
 			<div id="navigation" class="content">
-				<img id="prevslide" src="<?php echo site_url('img/back_dull.png');?>" alt="prev"/>
-                <img id="pauseplay" src="<?php echo site_url('img/pause_dull.png');?>" alt="pause & play"/>
-                <img id="nextslide" src="<?php echo site_url('img/forward_dull.png');?>" alt="next"/>
+                <a id="prevslide"></a>
+                <a id="pauseplay" class="play"></a>
+                <a id="nextslide"></a>
 			</div>
 		</div>
 	</div>

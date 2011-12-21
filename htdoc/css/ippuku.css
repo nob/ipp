@@ -344,6 +344,50 @@ div#flash-wrap a#enter:hover {
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
 }
+#navigation a {
+    display:inline-block;
+    width: 35px;
+}
+#prevslide {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position: -55px 0; width: 35px; height: 35px;
+}
+#prevslide:hover {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position:  -110px 0; width: 35px; height: 35px;
+}
+#prevslide:active {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position: 0 0; width: 35px; height: 35px;
+}
+#pauseplay {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position:  -330px 0 ; width: 35px; height: 35px;
+}
+#pauseplay:hover {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position:  -385px 0; width: 35px; height: 35px;
+}
+#pauseplay.play {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position: -440px 0; width: 35px; height: 35px;
+}
+#pauseplay.play:hover {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position: -495px 0; width: 35px; height: 35px;
+}
+#nextslide {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position:  -220px 0; width: 35px; height: 35px; 
+}
+#nextslide:hover {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position:  -275px 0; width: 35px; height: 35px;
+}
+#nextslide:active {
+    background: url(../img/controls.png) no-repeat top left;
+    background-position: -165px 0; width: 35px; height: 35px;
+}
 
 /*** Others ***/
 div#nojs-msg{

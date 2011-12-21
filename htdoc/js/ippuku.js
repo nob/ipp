@@ -22,6 +22,7 @@ jQuery(function($){
     } else {
         //start playing slide show.
         autoplay = 1;
+        $('#pauseplay').toggleClass('play'); //show pause button.
     }
         
     //call Supersized screen slideshow. 
@@ -110,6 +111,10 @@ jQuery(function($){
         $('#lang a').toggleClass('active', false);
         $(this).toggleClass('active', true);
         translateNavi();
+    });
+
+    $("#pauseplay").click(function() {
+        $(this).toggleClass('play'); //toggle play<->pause button.
     });
 
 });
