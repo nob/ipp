@@ -4,10 +4,13 @@ DirectoryIndex index.php
 ErrorDocument 404 /404.html
 ErrorDocument 403 /404.html
 
-RewriteEngine on
-
 #Charset for html / plaintext
 AddDefaultCharset UTF-8
+
+RewriteEngine on
+
+#Forbid access to git related files.
+RewriteRule ^(.*/)?\.git+ - [F,L]
 
 #Require 'www' subdomain.
 RewriteCond %{HTTP_HOST} ^ippukuberkeley\.com$ [NC]
