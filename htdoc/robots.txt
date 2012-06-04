@@ -1,12 +1,9 @@
 User-agent: *
 Sitemap: http://www.ippukuberkeley.com/sitemap.xml
 Allow: /
-Disallow: /img/
-Disallow: /css/
 Disallow: /index.php
 Disallow: /index.default.php
 Disallow: /intro.swf
-Disallow: /js/
 Disallow: /hours/
 Disallow: /reservations/
 Disallow: /directions/
