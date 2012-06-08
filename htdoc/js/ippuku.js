@@ -11,6 +11,8 @@ jQuery(function($){
             expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf",
             onFail: function() {
                 closeFlash();
+                autoplay = 1;
+                $('#pauseplay').toggleClass('play'); //show pause button.
             }
         });
         //Initialize "Enter" anchor.
@@ -128,7 +130,6 @@ function closeFlash() {
        } 
     });
     $('#flash-wrap').delay(800).fadeOut(1500);
-    
     //start playing slide show.
     $('#pauseplay').trigger('click');
 }
