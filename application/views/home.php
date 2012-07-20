@@ -8,6 +8,7 @@
         <meta name="robots" content="index, nofollow, noodp">
         <meta name="google" content="notranslate" />
         <link rel="shortcut icon" href="<?php echo site_url('img/favicon.ico');?>">
+        <link href='http://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v2.css');?>" type="text/css" media="screen, projection">  
         <!--[if lte IE 8]>
@@ -67,8 +68,12 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
 ?>
 		<h1 id="logo" class="content" <?php if ($with_intro === true) { echo 'style="display:none"';}?>><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>" alt="Ippuku logo"/></a></h1>
         <div id="navi" class="content">
+            <img src="img/new026_02.gif" id="new">
             <h2>
-                <a href="<?php echo site_url("hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="hour-<?php echo $lang?>">%%hour%%</a>
+                <a href="<?php echo site_url("tori_hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="tori_hour-<?php echo $lang?>">%%tori_hour%%</a>
+            </h2>
+            <h2>
+                <a href="<?php echo site_url("soba_hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="soba_hour-<?php echo $lang?>">%%soba_hour%%</a>
             </h2>
             <h2>
                 <a href="<?php echo site_url("reservations/index/$lang/");?>" alt="Reservations" rel="#overlay" id="rsvn-<?php echo $lang?>">%%rsvn%%</a>
@@ -77,7 +82,7 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
                 <a href="<?php echo site_url("directions/index/$lang/");?>" alt="Directions" rel="#overlay" id="dirc-<?php echo $lang?>">%%dirc%%</a>
             </h2>
 <!--
-Comment out until contents of "Menu" and "About" is fixd.
+Comment out until contents of "Menu" and "About" contents is fixd.
             <h2>
                 <a href="<?php echo site_url("menus/index/$lang/");?>" alt="Menus" rel="#overlay" id="menu-<?php echo $lang?>">%%menu%%</a>
                 <a href="<?php echo site_url("about/index/$lang/");?>" alt="About" rel="#overlay" id="about-<?php echo $lang?>">%%about%%</a>

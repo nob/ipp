@@ -7,9 +7,10 @@
 */
 $lang['html_title'] = '一服 | バークレーにある焼鳥と焼酎の居酒屋';
 $lang['meta_description'] = 'カリフォルニア、バークレーにある焼鳥と焼酎の居酒屋。住所: 2130 Center Street, Berkeley, CA. ご予約: (510) 665-1969';
-//$lang['about']  = '一服について';
-$lang['dirc']   = '地図';
-$lang['hour']   = '営業時間';
-//$lang['menu']   = '品書き';
+$lang['tori_hour']   = '焼鳥 営業時間';
+$lang['soba_hour']   = '手打そば 営業時間';
 $lang['rsvn']   = 'ご予約';
+$lang['dirc']   = '地図';
+//$lang['menu']   = '品書き';
+//$lang['about']  = '一服について';
 
