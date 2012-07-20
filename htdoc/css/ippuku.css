@@ -213,10 +213,16 @@ div#navi a#about-ja.active{
     background-position: -748px -44px;
 }
 */
-div#navi img#new {
+/* new icon */
+div#navi img#new-en {
     position:relative;
     top: 62px;
     right: -205px;
+}
+div#navi img#new-ja {
+    position:relative;
+    top: 60px;
+    right: -215px;
 }
 
 /*** Language bar ***/        

@@ -145,6 +145,8 @@ function translateNavi() {
                 $('title').text(val);
             } else if (key == 'meta_description') {
                 $('meta[name=description]').attr('content', val);
+            } else if (key == 'new') {
+                $('#' + key + '-' + current_lang).attr('id', key + '-' + lang);
             } else {
                 $('#' + key + '-' + current_lang).text(val);
                 var new_url = $('#' + key + '-' + current_lang).attr('href').replace('\/' + current_lang, '\/' + lang);

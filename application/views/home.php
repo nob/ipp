@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="<?php echo site_url('img/favicon.ico');?>">
         <link href='http://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
-        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v2.css');?>" type="text/css" media="screen, projection">  
+        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v3.css');?>" type="text/css" media="screen, projection">  
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku-ie.css');?>" type="text/css" media="screen, projection">  
         <![endif]-->
@@ -21,7 +21,7 @@
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
         <!--<script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
-		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v3.js');?>"></script>
+		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v4.js');?>"></script>
         <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-23614931-1']);
@@ -68,7 +68,7 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
 ?>
 		<h1 id="logo" class="content" <?php if ($with_intro === true) { echo 'style="display:none"';}?>><a href="<?php echo site_url('home');?>" alt="Ippuku"><img src="<?php echo site_url('img/ipk-logo-new.png');?>" alt="Ippuku logo"/></a></h1>
         <div id="navi" class="content">
-            <img src="img/new026_02.gif" id="new">
+        <img src="img/new026_02.gif" id="new-<?php echo $lang?>" alt="%%new%%">
             <h2>
                 <a href="<?php echo site_url("tori_hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="tori_hour-<?php echo $lang?>">%%tori_hour%%</a>
             </h2>
