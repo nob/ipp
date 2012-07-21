@@ -8,7 +8,6 @@
         <meta name="robots" content="index, nofollow, noodp">
         <meta name="google" content="notranslate" />
         <link rel="shortcut icon" href="<?php echo site_url('img/favicon.ico');?>">
-        <link href='http://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v3.css');?>" type="text/css" media="screen, projection">  
         <!--[if lte IE 8]>
