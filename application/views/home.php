@@ -15,7 +15,7 @@
         <![endif]-->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/jquery.url.js');?>"></script>
-		<script type="text/javascript" src="<?php echo site_url('js/supersized.3.1.3.min.js');?>"></script>
+		<script type="text/javascript" src="<?php echo site_url('js/supersized.3.2.7.min.js');?>"></script>
         <!--<script src="http://cdn.jquerytools.org/1.2.5/tiny/jquery.tools.min.js"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
         <!--<script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>-->
@@ -100,15 +100,6 @@ Comment out until contents of "Menu" and "About" contents is fixd.
 	<!--Control Bar-->
 	<div id="controls-wrapper">
 		<div id="controls">
-			<!--Slide counter-->
-            <!--
-			<div id="slidecounter">
-				<span class="slidenumber"></span>/<span class="totalslides"></span>
-			</div>
-            -->
-			<!--Slide captions displayed here-->
-			<!--<div id="slidecaption"></div>-->
-			<!--Navigation-->
 			<div id="navigation" class="content">
                 <a id="prevslide"></a>
                 <a id="pauseplay" class="play"></a>

@@ -26,7 +26,6 @@ jQuery(function($){
         autoplay = 1;
         $('#pauseplay').toggleClass('play'); //show pause button.
     }
-        
     //call Supersized screen slideshow. 
     $.supersized({
         //Functionality
@@ -114,9 +113,22 @@ jQuery(function($){
         $(this).toggleClass('active', true);
         translateNavi();
     });
-
+    
+    //other button behavior.
     $("#pauseplay").click(function() {
-        $(this).toggleClass('play'); //toggle play<->pause button.
+        api.playToggle(); 
+    });
+    $("#prevslide").click(function() {
+        api.prevSlide(); 
+    });
+    $("#nextslide").click(function() {
+        api.nextSlide(); 
+    });
+    $("#tori_hour-en, #tori_hour-ja").click(function() {
+        api.goTo(6); //Jump to Yakitori slides.  
+    });
+    $("#soba_hour-en, #soba_hour-ja").click(function() {
+        api.goTo(11); //Jump to Soba slides. 
     });
 
 });
