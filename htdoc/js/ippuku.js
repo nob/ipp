@@ -114,7 +114,7 @@ jQuery(function($){
         translateNavi();
     });
     
-    //other button behavior.
+    //Define other button behavior.
     $("#pauseplay").click(function() {
         api.playToggle(); 
     });
@@ -124,6 +124,15 @@ jQuery(function($){
     $("#nextslide").click(function() {
         api.nextSlide(); 
     });
+
+    if(jQuery.support.opacity){
+        $("#prevslide, #nextslide").mouseover(function() {
+           $(this).stop().animate({opacity:1},100);
+        }).mouseout(function(){
+           $(this).stop().animate({opacity:0.6},100);
+        });
+    }
+
     $("#tori_hour-en, #tori_hour-ja").click(function() {
         api.goTo(6); //Jump to Yakitori slides.  
     });
