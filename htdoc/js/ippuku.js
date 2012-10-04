@@ -33,7 +33,7 @@ jQuery(function($){
         autoplay				:	autoplay,//Slideshow starts playing automatically
         start_slide             :   1,		//Start slide (0 is random)
         random					: 	0,		//Randomize slide order (Ignores start slide)
-        slide_interval          :   4000,	//Length between transitions
+        slide_interval          :   3500,	//Length between transitions
         transition              :   1, 		//0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
         transition_speed		:	500,	//Speed of transition
         new_window				:	0,		//Image links open in new window/tab
@@ -48,8 +48,8 @@ jQuery(function($){
         min_height		        :   0,		//Min height allowed (in pixels)
         vertical_center         :   1,		//Vertically center background
         horizontal_center       :   1,		//Horizontally center background
-        fit_portrait         	:   1,		//Portrait images will not exceed browser height
-        fit_landscape			:   1,		//Landscape images will not exceed browser width
+        fit_portrait         	:   0,		//Portrait images will not exceed browser height
+        fit_landscape			:   0,		//Landscape images will not exceed browser width
         
         //Components
         navigation              :   1,		//Slideshow controls on/off
@@ -57,24 +57,32 @@ jQuery(function($){
         slide_counter           :   1,		//Display slide numbers
         slide_captions          :   0,		//Slide caption (Pull from "title" in slides array)
         slides 					:  	[		//Slideshow Images
-                                            {image : '/img/slide_c/img_0436.jpg'},  
-                                            {image : '/img/slide_c/img_0422.jpg'},  
-                                            {image : '/img/slide_c/img_0440.jpg'},  
-                                            {image : '/img/slide_c/img_0424.jpg'},  
-                                            {image : '/img/slide_c/img_0426.jpg'},  
-                                            {image : '/img/slide_c/img_0445.jpg'},  
-                                            {image : '/img/slide_c/img_0433.jpg'},  
-                                            {image : '/img/slide_c/img_0435.jpg'},  
-                                            {image : '/img/slide_c/img_0423.jpg'},  
-                                            {image : '/img/slide_c/img_0438.jpg'},  
-                                            {image : 'img/slide_c/img_0447.jpg'},  
-                                            {image : 'img/slide_c/img_0428.jpg'},  
-                                            {image : 'img/slide_c/img_0420.jpg'},  
-                                            {image : 'img/slide_c/img_0419.jpg'},  
-                                            {image : 'img/slide_c/img_0431.jpg'},  
-                                            {image : 'img/slide_c/img_0417.jpg'},  
-                                            {image : 'img/slide_c/img_0418.jpg'},  
-                                            {image : 'img/slide_c/img_0446.jpg'}  
+                                            {image : '/img/slide/i-01.jpg'},  
+                                            {image : '/img/slide/i-02.jpg'},  
+                                            {image : '/img/slide/i-03.jpg'},  
+                                            {image : '/img/slide/i-04.jpg'},  
+                                            {image : '/img/slide/i-05.jpg'},  
+                                            {image : '/img/slide/i-06.jpg'},  
+                                            {image : '/img/slide/i-07.jpg'},  
+                                            {image : '/img/slide/i-08.jpg'},  
+                                            {image : '/img/slide/i-09.jpg'},  
+                                            {image : '/img/slide/i-10.jpg'},  
+                                            {image : '/img/slide/i-11.jpg'},  
+                                            {image : '/img/slide/i-12.jpg'},  
+
+                                            {image : '/img/slide/y-01.jpg'},  
+                                            {image : '/img/slide/y-02.jpg'},  
+                                            {image : '/img/slide/y-03.jpg'},  
+                                            {image : '/img/slide/y-04.jpg'},  
+                                            {image : '/img/slide/y-05.jpg'},  
+                                            {image : '/img/slide/y-06.jpg'},  
+
+                                            {image : '/img/slide/s-01.jpg'},  
+                                            {image : '/img/slide/s-02.jpg'},  
+                                            {image : '/img/slide/s-03.jpg'},  
+                                            {image : '/img/slide/s-04.jpg'},  
+                                            {image : '/img/slide/s-05.jpg'}  
+
                                     ]
                                     
     }); 
@@ -134,10 +142,10 @@ jQuery(function($){
     }
 
     $("#tori_hour-en, #tori_hour-ja").click(function() {
-        api.goTo(6); //Jump to Yakitori slides.  
+        api.goTo(13); //Jump to Yakitori slides.  
     });
     $("#soba_hour-en, #soba_hour-ja").click(function() {
-        api.goTo(11); //Jump to Soba slides. 
+        api.goTo(19); //Jump to Soba slides. 
     });
 
 });
