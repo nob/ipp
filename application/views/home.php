@@ -20,7 +20,7 @@
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
         <!--<script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
-		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v4.js');?>"></script>
+		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v5.js');?>"></script>
         <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-23614931-1']);

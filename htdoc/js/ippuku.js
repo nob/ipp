@@ -57,31 +57,31 @@ jQuery(function($){
         slide_counter           :   1,		//Display slide numbers
         slide_captions          :   0,		//Slide caption (Pull from "title" in slides array)
         slides 					:  	[		//Slideshow Images
-                                            {image : '/img/slide/i-01.jpg'},  
-                                            {image : '/img/slide/i-02.jpg'},  
-                                            {image : '/img/slide/i-03.jpg'},  
-                                            {image : '/img/slide/i-04.jpg'},  
-                                            {image : '/img/slide/i-05.jpg'},  
-                                            {image : '/img/slide/i-06.jpg'},  
-                                            {image : '/img/slide/i-07.jpg'},  
-                                            {image : '/img/slide/i-08.jpg'},  
-                                            {image : '/img/slide/i-09.jpg'},  
-                                            {image : '/img/slide/i-10.jpg'},  
-                                            {image : '/img/slide/i-11.jpg'},  
-                                            {image : '/img/slide/i-12.jpg'},  
+                                            {image : '/img/slide/1i-01.jpg'},  
+                                            {image : '/img/slide/1i-02.jpg'},  
+                                            {image : '/img/slide/1i-03.jpg'},  
+                                            {image : '/img/slide/1i-04.jpg'},  
+                                            {image : '/img/slide/1i-05.jpg'},  
+                                            {image : '/img/slide/1i-06.jpg'},  
+                                            {image : '/img/slide/1i-07.jpg'},  
+                                            {image : '/img/slide/1i-08.jpg'},  
+                                            {image : '/img/slide/1i-09.jpg'},  
+                                            {image : '/img/slide/1i-10.jpg'},  
+                                            {image : '/img/slide/1i-11.jpg'},  
+                                            {image : '/img/slide/1i-12.jpg'},  
 
-                                            {image : '/img/slide/y-01.jpg'},  
-                                            {image : '/img/slide/y-02.jpg'},  
-                                            {image : '/img/slide/y-03.jpg'},  
-                                            {image : '/img/slide/y-04.jpg'},  
-                                            {image : '/img/slide/y-05.jpg'},  
-                                            {image : '/img/slide/y-06.jpg'},  
+                                            {image : '/img/slide/2y-01.jpg'},  
+                                            {image : '/img/slide/2y-02.jpg'},  
+                                            {image : '/img/slide/2y-03.jpg'},  
+                                            {image : '/img/slide/2y-04.jpg'},  
+                                            {image : '/img/slide/2y-05.jpg'},  
+                                            {image : '/img/slide/2y-06.jpg'},  
 
-                                            {image : '/img/slide/s-01.jpg'},  
-                                            {image : '/img/slide/s-02.jpg'},  
-                                            {image : '/img/slide/s-03.jpg'},  
-                                            {image : '/img/slide/s-04.jpg'},  
-                                            {image : '/img/slide/s-05.jpg'}  
+                                            {image : '/img/slide/3s-01.jpg'},  
+                                            {image : '/img/slide/3s-02.jpg'},  
+                                            {image : '/img/slide/3s-03.jpg'},  
+                                            {image : '/img/slide/3s-04.jpg'},  
+                                            {image : '/img/slide/3s-05.jpg'}  
 
                                     ]
                                     
