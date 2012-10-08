@@ -6,6 +6,6 @@
 |
 */
 
-$lang['title']	= "Teuchi Soba - Open Hours"; 
-$lang['desc']	=  "Monday - Friday: 11:30am - 2:00pm";
+$lang['title']	= "Teuchi Soba brunch - Open Hours"; 
+$lang['desc']	=  "Saturday, Sunday: 10:00am - 2:00pm";
 
