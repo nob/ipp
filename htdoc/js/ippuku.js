@@ -63,12 +63,6 @@ jQuery(function($){
                                             {image : '/img/slide/1i-04.jpg'},  
                                             {image : '/img/slide/1i-05.jpg'},  
                                             {image : '/img/slide/1i-06.jpg'},  
-                                            {image : '/img/slide/1i-07.jpg'},  
-                                            {image : '/img/slide/1i-08.jpg'},  
-                                            {image : '/img/slide/1i-09.jpg'},  
-                                            {image : '/img/slide/1i-10.jpg'},  
-                                            {image : '/img/slide/1i-11.jpg'},  
-                                            {image : '/img/slide/1i-12.jpg'},  
 
                                             {image : '/img/slide/2y-01.jpg'},  
                                             {image : '/img/slide/2y-02.jpg'},  
@@ -77,11 +71,18 @@ jQuery(function($){
                                             {image : '/img/slide/2y-05.jpg'},  
                                             {image : '/img/slide/2y-06.jpg'},  
 
-                                            {image : '/img/slide/3s-01.jpg'},  
-                                            {image : '/img/slide/3s-02.jpg'},  
-                                            {image : '/img/slide/3s-03.jpg'},  
-                                            {image : '/img/slide/3s-04.jpg'},  
-                                            {image : '/img/slide/3s-05.jpg'}  
+                                            {image : '/img/slide/3i-07.jpg'},  
+                                            {image : '/img/slide/3i-08.jpg'},  
+                                            {image : '/img/slide/3i-09.jpg'},  
+                                            {image : '/img/slide/3i-10.jpg'},  
+                                            {image : '/img/slide/3i-11.jpg'},  
+                                            {image : '/img/slide/3i-12.jpg'},  
+
+                                            {image : '/img/slide/4s-01.jpg'},  
+                                            {image : '/img/slide/4s-02.jpg'},  
+                                            {image : '/img/slide/4s-03.jpg'},  
+                                            {image : '/img/slide/4s-04.jpg'},  
+                                            {image : '/img/slide/4s-05.jpg'}  
 
                                     ]
                                     
@@ -142,7 +143,7 @@ jQuery(function($){
     }
 
     $("#tori_hour-en, #tori_hour-ja").click(function() {
-        api.goTo(13); //Jump to Yakitori slides.  
+        api.goTo(7); //Jump to Yakitori slides.  
     });
     $("#soba_hour-en, #soba_hour-ja").click(function() {
         api.goTo(19); //Jump to Soba slides. 
