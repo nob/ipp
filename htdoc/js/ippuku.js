@@ -6,7 +6,7 @@ jQuery(function($){
         $('#noflash-msg').show();
         //load intro flash movie.
         flashembed("flash", {
-            src: 'intro.swf', 
+            src: 'intro-v2.swf', 
             bgcolor: '#000000',
             expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf",
             onFail: function() {

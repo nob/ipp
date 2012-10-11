@@ -9,7 +9,7 @@
         <meta name="google" content="notranslate" />
         <link rel="shortcut icon" href="<?php echo site_url('img/favicon.ico');?>">
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
-        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v3.css');?>" type="text/css" media="screen, projection">  
+        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v4.css');?>" type="text/css" media="screen, projection">  
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="<?php echo site_url('css/ippuku-ie.css');?>" type="text/css" media="screen, projection">  
         <![endif]-->
@@ -20,7 +20,7 @@
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
         <!--<script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
-		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v5.js');?>"></script>
+		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v6.js');?>"></script>
         <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-23614931-1']);
