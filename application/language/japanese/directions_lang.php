@@ -7,7 +7,7 @@
 */
 
 $lang['desc1']	= 
-"住所: 2130 Center Street (between Shattuck Ave and Oxford St) Berkeley, CA 94704 
+"住所: 2130 Center Street Berkeley, CA 94704 
 Shattuck Aveを挟んだDowntown Berkeley駅(BART)の向かいにあります。";
 $lang['header1'] = "I-80 からお車でお越しの方";
 $lang['desc2']	= 
