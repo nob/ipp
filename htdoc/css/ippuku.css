@@ -293,7 +293,7 @@ div#overlay {
     border-radius: 20px;
 }
 div#overlay div#wrap {
-    width: 530px;
+    width: 520px;
     padding: 0px 15px;
     max-height:550px;
     overflow-y:auto;
