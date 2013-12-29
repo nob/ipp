@@ -6,7 +6,7 @@ jQuery(function($){
         $('#noflash-msg').show();
         //load intro flash movie.
         flashembed("flash", {
-            src: 'intro-v2.swf', 
+            src: 'intro-v2.swf',
             bgcolor: '#000000',
             expressInstall: "http://static.flowplayer.org/swf/expressinstall.swf",
             onFail: function() {
@@ -26,7 +26,7 @@ jQuery(function($){
         autoplay = 1;
         $('#pauseplay').toggleClass('play'); //show pause button.
     }
-    //call Supersized screen slideshow. 
+    //call Supersized screen slideshow.
     $.supersized({
         //Functionality
         slideshow               :   1,		//Slideshow on/off
@@ -50,62 +50,56 @@ jQuery(function($){
         horizontal_center       :   1,		//Horizontally center background
         fit_portrait         	:   0,		//Portrait images will not exceed browser height
         fit_landscape			:   0,		//Landscape images will not exceed browser width
-        
+
         //Components
         navigation              :   1,		//Slideshow controls on/off
         thumbnail_navigation    :   0,		//Thumbnail navigation
         slide_counter           :   1,		//Display slide numbers
         slide_captions          :   0,		//Slide caption (Pull from "title" in slides array)
         slides 					:  	[		//Slideshow Images
-                                            {image : '/img/slide/1i-01.jpg'},  
-                                            {image : '/img/slide/1i-02.jpg'},  
-                                            {image : '/img/slide/1i-03.jpg'},  
-                                            {image : '/img/slide/1i-04.jpg'},  
-                                            {image : '/img/slide/1i-05.jpg'},  
-                                            {image : '/img/slide/1i-06.jpg'},  
+                                            {image : '/img/slide/1i-01.jpg'},
+                                            {image : '/img/slide/1i-02.jpg'},
+                                            {image : '/img/slide/1i-03.jpg'},
+                                            {image : '/img/slide/1i-04.jpg'},
+                                            {image : '/img/slide/1i-05.jpg'},
+                                            {image : '/img/slide/1i-06.jpg'},
 
-                                            {image : '/img/slide/2y-01.jpg'},  
-                                            {image : '/img/slide/2y-02.jpg'},  
-                                            {image : '/img/slide/2y-03.jpg'},  
-                                            {image : '/img/slide/2y-04.jpg'},  
-                                            {image : '/img/slide/2y-05.jpg'},  
-                                            {image : '/img/slide/2y-06.jpg'},  
+                                            {image : '/img/slide/2y-01.jpg'},
+                                            {image : '/img/slide/2y-02.jpg'},
+                                            {image : '/img/slide/2y-03.jpg'},
+                                            {image : '/img/slide/2y-04.jpg'},
+                                            {image : '/img/slide/2y-05.jpg'},
+                                            {image : '/img/slide/2y-06.jpg'},
 
-                                            {image : '/img/slide/3i-07.jpg'},  
-                                            {image : '/img/slide/3i-08.jpg'},  
-                                            {image : '/img/slide/3i-09.jpg'},  
-                                            {image : '/img/slide/3i-10.jpg'},  
-                                            {image : '/img/slide/3i-11.jpg'},  
-                                            {image : '/img/slide/3i-12.jpg'},  
-
-                                            {image : '/img/slide/4s-01.jpg'},  
-                                            {image : '/img/slide/4s-02.jpg'},  
-                                            {image : '/img/slide/4s-03.jpg'},  
-                                            {image : '/img/slide/4s-04.jpg'},  
-                                            {image : '/img/slide/4s-05.jpg'}  
+                                            {image : '/img/slide/3i-07.jpg'},
+                                            {image : '/img/slide/3i-08.jpg'},
+                                            {image : '/img/slide/3i-09.jpg'},
+                                            {image : '/img/slide/3i-10.jpg'},
+                                            {image : '/img/slide/3i-11.jpg'},
+                                            {image : '/img/slide/3i-12.jpg'}
 
                                     ]
-                                    
-    }); 
+
+    });
 
     //Initialize overlay.
     var overlays = $('a[rel]').overlay({
-        speed: 'slow', 
-        left: 90, //This parameter is modified. Now it's position from right. 
+        speed: 'slow',
+        left: 90, //This parameter is modified. Now it's position from right.
         top: 85,
-        onBeforeLoad: function() { 
+        onBeforeLoad: function() {
             //for IE8 (or lower) & jQuery fadeIn() bug.
             if (jQuery.browser.msie && parseInt(jQuery.browser.version) <= 8) {
                 $('#overlay').css('filter', 'progid:DXImageTransform.Microsoft.gradient(startColorStr=#992E292A,endColorStr=#992E292A)');
-            }   
-            // load the page specified in the trigger 
+            }
+            // load the page specified in the trigger
             $('#wrap').hide('fast'); //hide current content by fast before loading next.
-            $('#wrap').load(this.getTrigger().attr("href")); 
+            $('#wrap').load(this.getTrigger().attr("href"));
             $('#wrap').show('fast'); //now show the content by fast.
             //activate the trigger to change it's color.
             this.getTrigger().toggleClass('active', true);
         },
-        onClose: function() { 
+        onClose: function() {
             //deactivate the trigger to change it's color.
             this.getTrigger().toggleClass('active', false);
         }
@@ -116,22 +110,22 @@ jQuery(function($){
         event.preventDefault ? event.preventDefault() : event.returnValue = false;
         $.each(overlays, function (key, val) {
             var ol = overlays.eq(key).overlay();
-            if (ol.isOpened()) ol.close(); 
+            if (ol.isOpened()) ol.close();
         });
         $('#lang a').toggleClass('active', false);
         $(this).toggleClass('active', true);
         translateNavi();
     });
-    
+
     //Define other button behavior.
     $("#pauseplay").click(function() {
-        api.playToggle(); 
+        api.playToggle();
     });
     $("#prevslide").click(function() {
-        api.prevSlide(); 
+        api.prevSlide();
     });
     $("#nextslide").click(function() {
-        api.nextSlide(); 
+        api.nextSlide();
     });
 
     if(jQuery.support.opacity){
@@ -143,10 +137,10 @@ jQuery(function($){
     }
 
     $("#tori_hour-en, #tori_hour-ja").click(function() {
-        api.goTo(7); //Jump to Yakitori slides.  
+        api.goTo(7); //Jump to Yakitori slides.
     });
     $("#soba_hour-en, #soba_hour-ja").click(function() {
-        api.goTo(19); //Jump to Soba slides. 
+        api.goTo(19); //Jump to Soba slides.
     });
 
 });
@@ -157,7 +151,7 @@ function closeFlash() {
     $('#logo').fadeIn(600, function() {
         if (jQuery.browser.msie) {
             $('#logo').removeAttr('style');
-       } 
+       }
     });
     $('#flash-wrap').delay(800).fadeOut(1500);
     //start playing slide show.
@@ -185,4 +179,4 @@ function translateNavi() {
             }
         });
     });
-} 
+}

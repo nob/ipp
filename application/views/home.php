@@ -9,9 +9,9 @@
         <meta name="google" content="notranslate" />
         <link rel="shortcut icon" href="<?php echo site_url('img/favicon.ico');?>">
 		<link rel="stylesheet" href="<?php echo site_url('css/supersized.css');?>" type="text/css" media="screen" />
-        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v4.css');?>" type="text/css" media="screen, projection">  
+        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-v4.css');?>" type="text/css" media="screen, projection">
         <!--[if lte IE 8]>
-        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-ie.css');?>" type="text/css" media="screen, projection">  
+        <link rel="stylesheet" href="<?php echo site_url('css/ippuku-ie.css');?>" type="text/css" media="screen, projection">
         <![endif]-->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo site_url('js/jquery.url.js');?>"></script>
@@ -20,7 +20,7 @@
         <script type="text/javascript" src="<?php echo site_url('js/overlay.js');?>"></script>
         <!--<script type="text/javascript" src="<?php echo site_url('js/overlay.apple.js');?>"></script>-->
         <script type="text/javascript" src="<?php echo site_url('js/toolbox.flashembed.js');?>"></script>
-		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v6.js');?>"></script>
+		<script type="text/javascript" src="<?php echo site_url('js/ippuku-v7.js');?>"></script>
         <script type="text/javascript">
           var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-23614931-1']);
@@ -32,12 +32,12 @@
           })();
         </script>
 	</head>
-<body>		
-    <noscript>    
+<body>
+    <noscript>
         <div class="error-msg">Please turn on Javascript on your web browser to see this website correctly.</div>
-    </noscript>    
+    </noscript>
 <?php
-if ($with_intro === true) 
+if ($with_intro === true)
 {
 ?>
     <!-- flash movie layer-->
@@ -72,9 +72,6 @@ if ((isset($this->config) AND $this->config->item("dev_mode")))
                 <a href="<?php echo site_url("tori_hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="tori_hour-<?php echo $lang?>">%%tori_hour%%</a>
             </h2>
             <h2>
-                <a href="<?php echo site_url("soba_hours/index/$lang/");?>" alt="Hours" rel="#overlay" id="soba_hour-<?php echo $lang?>">%%soba_hour%%</a>
-            </h2>
-            <h2>
                 <a href="<?php echo site_url("reservations/index/$lang/");?>" alt="Reservations" rel="#overlay" id="rsvn-<?php echo $lang?>">%%rsvn%%</a>
             </h2>
             <h2>
@@ -96,7 +93,7 @@ Comment out until contents of "Menu" and "About" contents is fixd.
 
 	<!--Thumbnail Navigation-->
     <div id="prevthumb"></div> <div id="nextthumb"></div>
-	
+
 	<!--Control Bar-->
 	<div id="controls-wrapper">
 		<div id="controls">
