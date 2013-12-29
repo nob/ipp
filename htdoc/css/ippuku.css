@@ -1,24 +1,24 @@
 body {
-    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif;
     background-color:#000000;
-    line-height:200%; 
+    line-height:200%;
 }
 .content{
-    background-color:#111; 
-    background:rgba(0,0,0,0.70); 
+    background-color:#111;
+    background:rgba(0,0,0,0.70);
     color:#fff;
-} 
+}
 h3 {
     margin-bottom: 15px;
 }
 /*** Logo ***/
-h1#logo{ 
-    position:absolute; 
+h1#logo{
+    position:absolute;
     z-index:100;
-    top:30px; 
-    left:90px; 
-    width:200px; 
-    padding: 0 10px 30px 30px; 
+    top:30px;
+    left:90px;
+    width:200px;
+    padding: 0 10px 30px 30px;
     margin: 0 auto;
     -webkit-border-top-left-radius: 80px;
     -webkit-border-top-right-radius: 80px;
@@ -29,36 +29,36 @@ h1#logo{
 }
 
 /*** Navigation menu ***/
-div#navi{ 
-    position:absolute; 
-    top:350px; 
-    left:90px; 
-    width:240px; 
+div#navi{
+    position:absolute;
+    top:350px;
+    left:90px;
+    width:240px;
     -webkit-border-bottom-left-radius: 80px;
     -webkit-border-bottom-right-radius: 80px;
     -moz-border-radius-bottomleft: 80px;
     -moz-border-radius-bottomright: 80px;
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
-    padding:0 0 20px 0; 
+    padding:0 0 20px 0;
 }
-div#navi h2 { 
-    padding:0 15px 10px 15px; 
+div#navi h2 {
+    padding:0 15px 10px 15px;
     overflow:hidden;
 }
-div#navi a{ 
-    background-image: url(../img/buttons2.png); 
-    background-repeat: no-repeat; 
+div#navi a{
+    background-image: url(../img/buttons2.png);
+    background-repeat: no-repeat;
     text-indent: -9999px;
-    font:15pt 'Butcherman', "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    font:15pt 'Butcherman', "Helvetica Neue", "Helvetica", Arial, sans-serif;
     text-decoration: none;
 
     display: block;
-    padding: 0 0; 
-    margin: 5px auto; 
+    padding: 0 0;
+    margin: 5px auto;
     /*
     //Comment out until more navi item is added.
-    margin: 5px 14px 5px 10px; 
+    margin: 5px 14px 5px 10px;
     float: left;
     */
 }
@@ -66,123 +66,123 @@ div#navi a{
 /**** Navigation menu items ****/
 
 /* Yakitori hours */
-div#navi a#tori_hour-en{ 
+div#navi a#tori_hour-en{
     background-position: 0px -22px;
-    width: 130px; 
+    width: 130px;
     height: 22px;
 }
-div#navi a#tori_hour-en:hover{ 
+div#navi a#tori_hour-en:hover{
     background-position: 0px 0px;
 }
-div#navi a#tori_hour-en.active{ 
+div#navi a#tori_hour-en.active{
     background-position: 0px -44px;
 }
-div#navi a#tori_hour-ja{ 
+div#navi a#tori_hour-ja{
     background-position: -542px -22px;
-    width: 143px; 
+    width: 143px;
     height: 22px;
 }
-div#navi a#tori_hour-ja:hover{ 
+div#navi a#tori_hour-ja:hover{
     background-position: -542px 0px;
 }
-div#navi a#tori_hour-ja.active{ 
+div#navi a#tori_hour-ja.active{
     background-position: -542px -44px;
 }
 /* Teuchi Soba hours */
-div#navi a#soba_hour-en{ 
+div#navi a#soba_hour-en{
     background-position: -140px -22px;
-    width: 169px; 
+    width: 169px;
     height: 22px;
 }
-div#navi a#soba_hour-en:hover{ 
+div#navi a#soba_hour-en:hover{
     background-position: -140px 0px;
 }
-div#navi a#soba_hour-en.active{ 
+div#navi a#soba_hour-en.active{
     background-position: -140px -44px;
 }
-div#navi a#soba_hour-ja{ 
+div#navi a#soba_hour-ja{
     background-position: -692px -22px;
-    width: 187px; 
+    width: 187px;
     height: 22px;
 }
-div#navi a#soba_hour-ja:hover{ 
+div#navi a#soba_hour-ja:hover{
     background-position: -692px 0px;
 }
-div#navi a#soba_hour-ja.active{ 
+div#navi a#soba_hour-ja.active{
     background-position: -692px -44px;
 }
 
 /* Reservations */
-div#navi a#rsvn-en{ 
+div#navi a#rsvn-en{
     background-position: -324px -22px;
-    width: 109px; 
+    width: 109px;
     height: 22px;
 }
-div#navi a#rsvn-en:hover{ 
+div#navi a#rsvn-en:hover{
     background-position: -324px 0px;
 }
-div#navi a#rsvn-en.active{ 
+div#navi a#rsvn-en.active{
     background-position: -324px -44px;
 }
-div#navi a#rsvn-ja{ 
+div#navi a#rsvn-ja{
     background-position: -896px -22px;
-    width: 65px; 
+    width: 65px;
     height: 22px;
 }
-div#navi a#rsvn-ja:hover{ 
+div#navi a#rsvn-ja:hover{
     background-position: -896px 0px;
 }
-div#navi a#rsvn-ja.active{ 
+div#navi a#rsvn-ja.active{
     background-position: -896px -44px;
 }
 
 /* Directions */
-div#navi a#dirc-en{ 
+div#navi a#dirc-en{
     background-position: -444px -22px;
-    width: 82px; 
+    width: 82px;
     height: 22px;
 }
-div#navi a#dirc-en:hover{ 
+div#navi a#dirc-en:hover{
     background-position: -444px 0px;
 }
-div#navi a#dirc-en.active{ 
+div#navi a#dirc-en.active{
     background-position: -444px -44px;
 }
-div#navi a#dirc-ja{ 
+div#navi a#dirc-ja{
     background-position: -975px -22px;
-    width: 44px; 
+    width: 44px;
     height: 22px;
 }
-div#navi a#dirc-ja:hover{ 
+div#navi a#dirc-ja:hover{
     background-position: -975px 0px;
 }
-div#navi a#dirc-ja.active{ 
+div#navi a#dirc-ja.active{
     background-position: -975px -44px;
 }
 
 /* Menus */
 /*
 //Comment out until 'Menu' content is  fixed.
-div#navi a#menu-en{ 
+div#navi a#menu-en{
     background-position: -155px -22px;
-    width: 50px; 
+    width: 50px;
     height: 22px;
 }
-div#navi a#menu-en:hover{ 
+div#navi a#menu-en:hover{
     background-position: -155px 0px;
 }
-div#navi a#menu-en.active{ 
+div#navi a#menu-en.active{
     background-position: -155px -44px;
 }
-div#navi a#menu-ja{ 
+div#navi a#menu-ja{
     background-position: -572px -22px;
-    width: 66px; 
+    width: 66px;
     height: 22px;
 }
-div#navi a#menu-ja:hover{ 
+div#navi a#menu-ja:hover{
     background-position: -572px 0px;
 }
-div#navi a#menu-ja.active{ 
+div#navi a#menu-ja.active{
     background-position: -572px -44px;
 }
 */
@@ -190,30 +190,31 @@ div#navi a#menu-ja.active{
 /* About */
 /*
 //Comment out until 'About' content is  fixed.
-div#navi a#about-en{ 
+div#navi a#about-en{
     background-position: -330px -22px;
-    width: 50px; 
+    width: 50px;
     height: 22px;
 }
-div#navi a#about-en:hover{ 
+div#navi a#about-en:hover{
     background-position: -330px 0px;
 }
-div#navi a#about-en.active{ 
+div#navi a#about-en.active{
     background-position: -330px -44px;
 }
-div#navi a#about-ja{ 
+div#navi a#about-ja{
     background-position: -748px -22px;
-    width: 132px; 
+    width: 132px;
     height: 22px;
 }
-div#navi a#about-ja:hover{ 
+div#navi a#about-ja:hover{
     background-position: -748px 0px;
 }
-div#navi a#about-ja.active{ 
+div#navi a#about-ja.active{
     background-position: -748px -44px;
 }
 */
 /* new icon */
+/*
 div#navi img#new-en {
     position:relative;
     top: 62px;
@@ -224,14 +225,15 @@ div#navi img#new-ja {
     top: 60px;
     right: -215px;
 }
+*/
 
-/*** Language bar ***/        
-div#lang { 
-    position:absolute; 
-    top:0px; 
-    right:100px; 
-    width:170px; 
-    padding:15px 10px 5px; 
+/*** Language bar ***/
+div#lang {
+    position:absolute;
+    top:0px;
+    right:100px;
+    width:170px;
+    padding:15px 10px 5px;
     overflow: hidden;
     -webkit-border-bottom-left-radius: 60px;
     -webkit-border-bottom-right-radius: 60px;
@@ -240,17 +242,17 @@ div#lang {
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
 }
-div#lang a { 
-    background-image: url(../img/buttons2.png); 
-    background-repeat: no-repeat; 
+div#lang a {
+    background-image: url(../img/buttons2.png);
+    background-repeat: no-repeat;
     display: block;
     margin: 0px 15px;
 
     text-indent: -9999px;
-    text-align:center; 
-    font:10pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
-    text-decoration:none; 
-    outline: none; 
+    text-align:center;
+    font:10pt "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    text-decoration:none;
+    outline: none;
     color:#ADACAC;
     float: left;
 
@@ -286,7 +288,7 @@ div#overlay {
     display:none;
     width: 550px;
     padding: 20px 0px 15px;
-    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif;
     overflow-y:auto;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -299,7 +301,7 @@ div#overlay div#wrap {
     overflow-y:auto;
 }
 div#overlay div#wrap p{
-    line-height: 140%; 
+    line-height: 140%;
 }
 div#overlay p{
     margin: 0 0 5px;
@@ -309,7 +311,7 @@ div#overlay p#map-link{
     text-align: right;
 }
 p#map-link a{
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 /***** close button positioned on upper right corner ****/
 div#overlay .close {
@@ -358,11 +360,11 @@ div#flash-wrap p {
 }
 div#flash-wrap a#enter {
     color:#FFFFFF;
-    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
-    background-image: url(../img/enter-button.png); 
-    background-repeat: no-repeat; 
+    background-image: url(../img/enter-button.png);
+    background-repeat: no-repeat;
     text-indent: -9999px;
     display:block;
     width: 150px;
@@ -370,21 +372,21 @@ div#flash-wrap a#enter {
     margin: 0 0 0 790px;
 }
 div#flash-wrap a#enter:hover {
-    background-position: 0px -38px; 
+    background-position: 0px -38px;
 }
 
 /*** Controls section (overwrite ./supersized.css) ***/
 /*
-#controls-wrapper { 
-    margin:0 auto; 
-    height:62px; 
-    width:100%; 
-    bottom:0; 
-    left:0; 
-    z-index:4; 
-    position:fixed; 
-    background:none; 
-} 
+#controls-wrapper {
+    margin:0 auto;
+    height:62px;
+    width:100%;
+    bottom:0;
+    left:0;
+    z-index:4;
+    position:fixed;
+    background:none;
+}
 #navigation {
     padding: 10px 10px 10px;
     -webkit-border-top-left-radius: 60px;
@@ -428,7 +430,7 @@ div#flash-wrap a#enter:hover {
 }
 #nextslide {
     background: url(../img/controls.png) no-repeat top left;
-    background-position:  -220px 0; width: 35px; height: 35px; 
+    background-position:  -220px 0; width: 35px; height: 35px;
 }
 #nextslide:hover {
     background: url(../img/controls.png) no-repeat top left;
@@ -443,9 +445,9 @@ div#flash-wrap a#enter:hover {
 #pauseplay {
     display: hidden;
 }
-#prevslide, #nextslide { 
-    position:absolute; 
-    height:43px; 
+#prevslide, #nextslide {
+    position:absolute;
+    height:43px;
     width:43px;
     top:50%;
     margin-top:-21px;
@@ -459,7 +461,7 @@ div#flash-wrap a#enter:hover {
     right:10px;
     background:url('../img/forward.png');
 }
-#prevslide:active, #nextslide:active { 
+#prevslide:active, #nextslide:active {
     margin-top:-19px;
 }
 #prevslide:hover, #nextslide:hover {
@@ -473,11 +475,11 @@ div#nojs-msg{
     position: fixed;
     z-index:101;
     top:317px;
-    padding:4px 0; 
+    padding:4px 0;
     text-align: center;
     background-color: orange;
     color: #FFFFFF;
-    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif; 
+    font:11pt "Helvetica Neue", "Helvetica", Arial, sans-serif;
     font-weight: bold;
 }
 div#noflash-msg img{
