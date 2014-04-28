@@ -1,11 +1,11 @@
 <?php
 /*
 |--------------------------------------------------------------------------
-| Texts displayed in view files. 
+| Texts displayed in view files.
 |--------------------------------------------------------------------------
 |
 */
 
-$lang['title']	= "Teuchi Soba lunch - Open Hours"; 
-$lang['desc']	=  "Friday, Saturday: 11:00am - 2:00pm or sellout (60 orders daily)";
+$lang['title']	= "Teuchi Soba - Open Hours";
+$lang['desc']	=  "Monday, Tuesday: 5:00pm - 10:00pm";
 
