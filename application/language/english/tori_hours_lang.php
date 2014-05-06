@@ -5,9 +5,11 @@
 |--------------------------------------------------------------------------
 |
 */
-
 $lang['title']	= "Yakitori Dinner- Open Hours";
-$lang['desc']	=
-"Wednesday, Thursday, Sunday: 5:00pm - 10:00pm
-Friday, Saturday: 5:00pm - 11:00pm";
+
+$lang['days1'] = "Wednesday, Thursday, Sunday";
+$lang['days1_hours'] = "5:00pm - 10:00pm";
+
+$lang['days2'] = "Friday, Saturday";
+$lang['days2_hours'] = "5:00pm - 11:00pm";
 

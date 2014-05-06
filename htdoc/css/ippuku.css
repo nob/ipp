@@ -300,11 +300,33 @@ div#overlay div#wrap {
     max-height:550px;
     overflow-y:auto;
 }
+
 div#overlay div#wrap p{
     line-height: 140%;
 }
 div#overlay p{
     margin: 0 0 5px;
+}
+div#overlay div#wrap dl{
+    margin-top: 30px;
+    clear: both;
+}
+div#overlay div#wrap dt{
+    float: left;
+    width: 170px;
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+div#overlay div#wrap dt.en{
+    width: 240px;
+}
+div#overlay div#wrap dt.soba{
+    width: 140px !important;
+}
+div#overlay div#wrap dd{
+    margin-bottom: 25px;
 }
 div#overlay p#map-link{
     margin: 0 0 5px ! important;
