@@ -76,7 +76,13 @@ jQuery(function($){
                                             {image : '/img/slide/3i-09.jpg'},
                                             {image : '/img/slide/3i-10.jpg'},
                                             {image : '/img/slide/3i-11.jpg'},
-                                            {image : '/img/slide/3i-12.jpg'}
+                                            {image : '/img/slide/3i-12.jpg'},
+
+                                            {image : '/img/slide/4s-01.jpg'},
+                                            {image : '/img/slide/4s-02.jpg'},
+                                            {image : '/img/slide/4s-03.jpg'},
+                                            {image : '/img/slide/4s-04.jpg'},
+                                            {image : '/img/slide/4s-05.jpg'}
 
                                     ]
 

@@ -214,7 +214,6 @@ div#navi a#about-ja.active{
 }
 */
 /* new icon */
-/*
 div#navi img#new-en {
     position:relative;
     top: 62px;
@@ -225,7 +224,6 @@ div#navi img#new-ja {
     top: 60px;
     right: -215px;
 }
-*/
 
 /*** Language bar ***/
 div#lang {

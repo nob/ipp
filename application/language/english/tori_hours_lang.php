@@ -5,7 +5,7 @@
 |--------------------------------------------------------------------------
 |
 */
-$lang['title']	= "Yakitori Dinner- Open Hours";
+$lang['title']	= "Yakitori - Open days and hours";
 
 $lang['days1'] = "Wednesday, Thursday, Sunday";
 $lang['days1_hours'] = "5:00pm - 10:00pm";
