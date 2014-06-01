@@ -301,6 +301,7 @@ div#overlay div#wrap {
 
 div#overlay div#wrap p{
     line-height: 140%;
+    margin-left: 35px;
 }
 div#overlay p{
     margin: 0 0 5px;
